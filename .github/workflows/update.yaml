@@ -15,7 +15,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
 
-      - name: Update Light Novel Souce
+      - name: Update CSS
         run: |
           chmod 777 -R *
           bash css.sh
