@@ -1,5 +1,4 @@
 {
-  "exportedMediaSourceDataList": {
     "mediaSources": [
         {
             "factoryId": "web-selector",
@@ -68,5 +67,4 @@
             }
         }
     ]
-  }
 }
