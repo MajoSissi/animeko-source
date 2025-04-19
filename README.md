@@ -1,6 +1,6 @@
 # [Animeko 订阅源/数据源](https://github.com/open-ani/animeko)
 
-|此仓库|链接|
+|此库|链接|
 |--|--|
 |在线|https://raw.githubusercontent.com/MajoSissi/animeko-source/main/source/css.json|
 
