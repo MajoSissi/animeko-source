@@ -2,7 +2,7 @@
 
 |此仓库|链接|
 |--|--|
-|在线|https://raw.githubusercontent.com/MajoSissi/animeko-source/refs/heads/main/source/css.json|
+|在线|https://raw.githubusercontent.com/MajoSissi/animeko-source/main/source/css.json|
 
 |官方|链接|
 |--|--|
