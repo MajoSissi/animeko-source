@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+    paths:
+      - 'custom/**'
 jobs:
   build:
     runs-on: ubuntu-latest
