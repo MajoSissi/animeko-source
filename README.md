@@ -1,4 +1,4 @@
-# [Animeko 订阅源/数据源](https://github.com/open-ani/animeko)
+## [Animeko 订阅源/数据源](https://github.com/open-ani/animeko)
 
 |此库|链接|
 |--|--|
