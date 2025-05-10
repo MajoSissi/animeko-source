@@ -1,4 +1,4 @@
-name: Delete old workflow runs
+name: Delete Old Workflow
 on:
   schedule:
     - cron: '0 0 * * 0'
@@ -7,10 +7,11 @@ jobs:
   del_runs:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@v2
+      - name: Delete releases and workflows runs
+        uses: ophub/delete-releases-workflows@main
         with:
-          token: ${{ github.token }}
-          repository: ${{ github.repository }}
-          retain_days: 3
-          keep_minimum_runs: 6
+          delete_releases: true
+          releases_keep_latest: 5
+          delete_workflows: true
+          workflows_keep_day: 10
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
