@@ -1,0 +1,2086 @@
+{
+  "exportedMediaSourceDataList": {
+    "mediaSources": [
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "酱紫社(修复)",
+                "description": "",
+                "iconUrl": "http://www.jzsdm1.com/upload/eighteen/20241227-1/991272b4a1029e60a9951c8ea874ff2a.png",
+                "searchConfig": {
+                    "searchUrl": "http://www.jzsdm1.com/index.php/vod/search.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": true,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "div.video-info-header > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": "body > .box-width .search-box .thumb-content > .thumb-txt",
+                        "selectLinks": "body > .box-width .search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": ".anthology-list-play a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "(第\\s*(?<ep>.+)\\s*[话集])|1080P"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "$^",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(url=(?<v>.+playlist.m3u8))",
+                        "cookies": "quality=1080P",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                },
+                "tier": 1
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "嘀哩嘀哩",
+                "description": "",
+                "iconUrl": "https://dilidili.online/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://dilidili.online/search?q={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".card-body > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".nav-item.flex-fill.overflow-hidden.play-tab",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".list-unstyled",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "720P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "落攻动漫",
+                "description": "",
+                "iconUrl": "https://www.fengchedonman.com/upload/mxprocms/20250308-1/260c7eba5817cd863c8e79c173e3e69a.jpg",
+                "searchConfig": {
+                    "searchUrl": "https://www.fengchedonman.com/vodsearch/{keyword}----------1---.html",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "div.module-card-item-title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": "div.module-card-item-title > a",
+                        "selectLinks": "div.module-card-item-title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".module-tab-item.tab-item",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".module-play-list",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "720P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "新动漫网",
+                "description": "可看里番",
+                "iconUrl": "https://www.xdmw.cc/template/kuhei3/statics/img/logo_m.png",
+                "searchConfig": {
+                    "searchUrl": "https://www.xdmw.cc/vodsearch/{keyword}----------1---.html",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".title > a",
+                        "selectLinks": ".title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".pull-right1",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".stui-content__playlist",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "720P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "秋之动漫",
+                "description": "不行就梯子",
+                "iconUrl": "https://syimg.3dmgame.com/uploadimg/ico/2024/0705/1720161268791112.png",
+                "searchConfig": {
+                    "searchUrl": "https://www.akianime.cc/bgmsearch/-------------.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".detail-info.rel.flex-auto.lightSpeedIn > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".detail-info.rel.flex-auto.lightSpeedIn > a",
+                        "selectLinks": ".detail-info.rel.flex-auto.lightSpeedIn > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".anthology-tab > div.swiper-wrapper > a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(.+if=1&url=(?<v>.+))",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "AGE动漫",
+                "description": "",
+                "iconUrl": "https://cdn.aiqingyu1314.com/age/statics/images/avatar.jpg?v=2024042101",
+                "searchConfig": {
+                    "searchUrl": "https://www.agedm.org/search?query={keyword}&page=1",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".card-title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".nav-item",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": "ul.video_detail_episode",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua.php).+?url=",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(.+if=1&url=(?<v>.+))",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "新优酷",
+                "description": "",
+                "iconUrl": "https://www.youknow.tv/upload/mxprocms/20240119-1/55e70266f81055026bb40dee6a603812.png",
+                "searchConfig": {
+                    "searchUrl": "https://www.youknow.tv/search/-------------/?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".module-card-item-title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".module-tab-items-box > .module-tab-item.tab-item",
+                        "matchChannelName": "(?<ch>.*?\\d)",
+                        "selectEpisodeLists": ".module-play-list-content.module-play-list-base",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "720P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "萌番动漫",
+                "description": "",
+                "iconUrl": "https://www.moefan.cc/upload/site/20250314-1/0a7c24e7dc763b5ed861cc22061cca8b.png",
+                "searchConfig": {
+                    "searchUrl": "https://www.moefan.cc/index.php/vod/search.html?wd={keyword}&submit=",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".hl-item-thumb",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".hl-tabs-btn",
+                        "matchChannelName": "(?<ch>.*?\\d)",
+                        "selectEpisodeLists": ".hl-plays-list",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip.js|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "风铃动漫",
+                "description": "",
+                "iconUrl": "https://www.aafun.cc/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.aafun.cc/feng-s.html?wd={keyword}&submit=",
+                    "searchUseOnlyFirstWord": true,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".hl-item-thumb",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".hl-tabs-btn",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".hl-plays-list",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip.js|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "E-ACG(替换)",
+                "description": "",
+                "iconUrl": "https://i.loli.net/2019/12/09/17hvXK2LemTtgfs.png",
+                "searchConfig": {
+                    "searchUrl": "https://www.eacg1.com/vodsearch/-------------.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 5000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "body > div.fed-main-info.fed-min-width > div > div > dl > dd.fed-deta-content > h1 a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".fed-part-layout .fed-deta-info h1.fed-part-eone",
+                        "selectLinks": ".fed-part-layout > .fed-deta-info h1.a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "body .fed-part-case .fed-tabs-boxs li.fed-play-btns a",
+                        "matchChannelName": "(?<ch>.*?\\d+)",
+                        "selectEpisodeLists": ".fed-drop-boxs.fed-drop-btms  .fed-play-item",
+                        "selectEpisodesFromList": ".fed-col-lg1 a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": ".fed-drop-boxs .fed-part-rows .fed-col-lg1 a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "第一动漫(替换)",
+                "description": "可看里番",
+                "iconUrl": "https://anime.d1dm.xyz/template/conch/asset/img/favicon1.png",
+                "searchConfig": {
+                    "searchUrl": "https://1anime2025.me/vodsearch/-------------.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "div.video-info-header > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "div.module-tab-item > span",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".module-list.module-player-list",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "次元方舟",
+                "description": "",
+                "iconUrl": "https://itopdog.xyxza.com/52pknet/imgfile/20231211/11102331be1e.jpg",
+                "searchConfig": {
+                    "searchUrl": "http://www.cyfz.vip/search.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".thumb-txt a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".anthology-tab a",
+                        "matchChannelName": "(?<ch>.*?\\d)",
+                        "selectEpisodeLists": ".anthology-list-play.size",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua.php).+?url=",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "追剧影院",
+                "description": "",
+                "iconUrl": "https://pp.myapp.com/ma_icon/0/icon_54336988_1716806007/256",
+                "searchConfig": {
+                    "searchUrl": "https://pzlyw.com/vodsearch/{keyword}----------1---.html",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "div.downtitle.cf li",
+                        "matchChannelName": "",
+                        "selectEpisodeLists": ".videolist",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "喵物次元",
+                "description": "",
+                "iconUrl": "http://pic.danji100.com/upload/2023-12/20231211114703835.png",
+                "searchConfig": {
+                    "searchUrl": "https://www.mwcy.net/search.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                        "matchChannelName": "(?<ch>.*?\\d)",
+                        "selectEpisodeLists": ".anthology-list-play",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "去看吧",
+                "description": "",
+                "iconUrl": "https://11kt.net/klogo.png",
+                "searchConfig": {
+                    "searchUrl": "https://11kt.net/index.php/vod/search.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".fed-part-eone.fed-font-xvi a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".fed-play-btns.fed-drop-btns.fed-padding.fed-col-xs3.fed-col-md2",
+                        "matchChannelName": "",
+                        "selectEpisodeLists": ".fed-padding.fed-col-xs3.fed-col-md2.fed-col-lg1",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "叽哔动漫",
+                "description": "",
+                "iconUrl": "https://www.jibi.cc/upload/mxprocms/20240530-1/811f55cb787194c59e3f6d1d8724571c.jpg",
+                "searchConfig": {
+                    "searchUrl": "https://www.jibi.cc/index.php/vod/search.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "div.module-card-item-title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".module-card-item-title > a",
+                        "selectLinks": ".module-card-item-title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".module-tab-item.tab-item",
+                        "matchChannelName": "^(?<ch>.+?)$",
+                        "selectEpisodeLists": ".module-play-list-content",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>\\d+)"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "div.module-blocklist > div > a",
+                        "selectEpisodeLinks": "a",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>\\d+)"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|cdn|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "影视森林",
+                "description": "",
+                "iconUrl": "http://www.hc34567.com/static/images/logo.png",
+                "searchConfig": {
+                    "searchUrl": "http://www.hc34567.com/hcvodsearch/{keyword}----------1---.html",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "no-channel",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": ".myui-content__list a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "佩可爱动漫",
+                "description": "",
+                "iconUrl": "https://www.miaoaaa.com/wp-content/uploads/2023/09/pekolove.com_.png",
+                "searchConfig": {
+                    "searchUrl": "https://acg.pekolove.net/?s={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".wp-block-post-title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": "",
+                        "selectLinks": "",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "no-channel",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": ".wp-block-column.is-layout-flow.wp-block-column-is-layout-flow > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(index|css|m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(?<v>https?:\\/\\/(?:[^/]*\\.)?(?:hn\\.bfvvs|modujx\\w*|rrcdnbf\\w*|lz-cdn\\w*|v\\.cdnlz\\w*|bfikuncdn|cdn\\.wlcdn\\w*|tlkqc|vip\\.ffzy-play\\w*|vip\\.ffzy-online\\w*|svipsvip\\.ffzy-online\\w*|svip\\.high\\w*|v\\w*\\.fentvoss)\\S+\\.(?:mp4|mkv|m3u8)(?:\\?.+)?)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "火狼动漫",
+                "description": "可看里番",
+                "iconUrl": "https://huolangdm2.net/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://huolangdm2.net/search/{keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".text-ellipsis.text-mr-1",
+                        "selectLinks": ".col-md-2 a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "ul.nav.nav-tabs.ff-playurl-tab > li",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": "ul.list-unstyled",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(?<v>https?:\\/\\/(?:[^/]*\\.)?(?:hn\\.bfvvs|modujx\\w*|rrcdnbf\\w*|lz-cdn\\w*|v\\.cdnlz\\w*|bfikuncdn|cdn\\.wlcdn\\w*|tlkqc|vip\\.ffzy-play\\w*|vip\\.ffzy-online\\w*|svipsvip\\.ffzy-online\\w*)\\S+\\.(?:mp4|mkv|m3u8)(?:\\?.+)?)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "蚂蚁影视",
+                "description": "",
+                "iconUrl": "https://cdn.aiqingyu1314.com/mayi/statics/img/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.mayi520.cc/vodsearch/-------------.html?wd={keyword}&sq=yes",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".active > .thumb a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".play_source.clearfix a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".stui-content__playlist.play_source_list_item",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": false,
+                        "matchNestedUrl": "https?://[^\\s]+?(m3u8|vip|xigua\\.php)[^\\s]*?\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "A影院",
+                "description": "",
+                "iconUrl": "https://cdn.wyteam.net/webapps/maccms/template/blueghost/img/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.appmovie.click/index.php/vod/search.html?wd={keyword}&submit=",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".stui-vodlist__item > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".stui-pannel:not(#desc) .stui-pannel__head:has(> .more) > h3.title",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".stui-content__playlist",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "饭团动漫(替换)",
+                "description": "",
+                "iconUrl": "https://acgpost.com/template/ft-v2/icon/acgfantuan-icon-72.png",
+                "searchConfig": {
+                    "searchUrl": "https://acgpost.com/search.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "body > main > div > div.mt-2-5 > div > div > div > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "body > main > div > div.row.mt-1-25.mb-5 > div > div > div > ul > li > button",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".anime-episode",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#线路一 > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "720P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/)(?!.*google-analytics).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(.+player/\\?url=(?<v>.+))",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "风车动漫(里番)",
+                "description": "",
+                "iconUrl": "https://fcdm003.cc/template/zhiyan/assets/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://fcdm003.cc/see.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "div.info p:nth-child(5) a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": "div.info > p:first-child > a",
+                        "selectLinks": "div.info > p:last-child > span > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".mxianlu > a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".jisu",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "720P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "风车动漫",
+                "description": "",
+                "iconUrl": "https://dmfengche.cc/template/zhiyan/assets/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://dmfengche.cc/search/-------------.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": "div.info > p:first-child > a",
+                        "selectLinks": "div.info > p:last-child > span > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".mxianlu.animate__animated.animate__fadeInUp > a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".jisu",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": ".jisu > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "720P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "影视大全",
+                "description": "可看里番",
+                "iconUrl": "https://cctv5566.cc/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://cctv5566.cc/s/{keyword}/8/1/",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".con-pannel-title:last-child > h3.title",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".lists",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "新视觉影院",
+                "description": "可看里番",
+                "iconUrl": "https://www.sclgvs.com/template/shoutu40/assets/images/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.sclgvs.com/yy6080search/-------------/?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".swiper-wrapper a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": "#playsx",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#playsx .ep-item a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "风车动漫2",
+                "description": "",
+                "iconUrl": "https://cdn.yinghuazy.xyz/webjs/stui_tpl/statics/img/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.dmla5.com/search/-------------.html?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".title > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".nav.nav-tabs > li",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".stui-content__playlist.clearfix",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "蜜桃动漫",
+                "description": "",
+                "iconUrl": "https://www.mitaodm.com/template/jianbai/statics/img/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.mitaodm.com/vodsearch.html?wd={keyword}&submit=",
+                    "searchUseOnlyFirstWord": true,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "div > div > h4 > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "div.stui-vodlist__head > h3.title",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": "div.stui-vodlist__head > .stui-content__playlist",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "趣动漫",
+                "description": "",
+                "iconUrl": "https://www.qdm66.com/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.qdm66.com/search/-------------.html?wd={keyword}&submit=",
+                    "searchUseOnlyFirstWord": true,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "#searchList > li > div.detail > h4 > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "body > div.container > div > div.col-md-wide-7.col-xs-1.padding-0 > div:nth-child(4) > div > div.myui-panel_hd > div > ul > li > a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": "body > div.container > div > div.col-md-wide-7.col-xs-1.padding-0 > div:nth-child(4) > div > div.tab-content.myui-panel_bd > div",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "#playlist1 > ul > li > a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "九兔动漫",
+                "description": "可看里番，部分地区被屏蔽",
+                "iconUrl": "https://www.9tdm.com/template/dm/img/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://www.jtdm.cc/search/page/1/wd/{keyword}.html",
+                    "searchUseOnlyFirstWord": true,
+                    "rawBaseUrl": "",
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "body > div.container-fluid > div > div.col-md-9.ms-sm-auto.col-lg-10.p-0.px-md-4 > div > ul > li > div > div.w-obj.flex-grow-1.mr-1.ps-3.overflow-hidden.fs-7.text-body-secondary > h3 > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "body > div.container-fluid > div > div.col-md-9.ms-sm-auto.col-lg-10.p-0.px-md-4 > div.video-urls.bg-body.rounded.p-3.p-md-4.mt-3.mt-md-4 > div.form-floating > select > option",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".hl-plays-list",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": "body > div.container-fluid > div > div.col-md-9.ms-sm-auto.col-lg-10.p-0.px-md-4 > div.video-urls.bg-body.rounded.p-3.p-md-4.mt-3.mt-md-4 > div.form-floating > select > option:nth-child(1)",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "米粒动漫",
+                "description": "",
+                "iconUrl": "https://milimili.nl/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://milimili.nl/search?q={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "a",
+                    "selectorSubjectFormatA": {
+                        "selectLists": "#search_list > ul > li > h6 > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": "#search_list > ul > li > h6",
+                        "selectLinks": ".list-unstyled a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "no-channel",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": "ul.menu-tabs > li",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".row.list-unstyled.gutters-1",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": ".row.list-unstyled a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "cookies": "quality=1080",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        },
+      {
+            "factoryId": "web-selector",
+            "version": 2,
+            "arguments": {
+                "name": "girigiri愛動漫(修复)",
+                "description": "",
+                "iconUrl": "https://anime.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png",
+                "searchConfig": {
+                    "searchUrl": "https://ani.girigirilove.com/search/-------------/?wd={keyword}",
+                    "searchUseOnlyFirstWord": false,
+                    "searchRemoveSpecial": true,
+                    "searchUseSubjectNamesCount": 1,
+                    "rawBaseUrl": "",
+                    "requestInterval": 3000,
+                    "subjectFormatId": "indexed",
+                    "selectorSubjectFormatA": {
+                        "selectLists": ".vod-detail-bnt a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatIndexed": {
+                        "selectNames": ".slide-info-title.hide",
+                        "selectLinks": ".vod-detail-bnt > a",
+                        "preferShorterName": true
+                    },
+                    "selectorSubjectFormatJsonPathIndexed": {
+                        "selectLinks": "$[*]['url', 'link']",
+                        "selectNames": "$[*]['title','name']",
+                        "preferShorterName": true
+                    },
+                    "channelFormatId": "index-grouped",
+                    "selectorChannelFormatFlattened": {
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLinksFromList": "",
+                        "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                    },
+                    "selectorChannelFormatNoChannel": {
+                        "selectEpisodes": ".anthology-list-play a",
+                        "selectEpisodeLinks": "",
+                        "matchEpisodeSortFromName": "(第\\s*(?<ep>.+)\\s*[话集])|1080P"
+                    },
+                    "defaultResolution": "1080P",
+                    "defaultSubtitleLanguage": "CHS",
+                    "onlySupportsPlayers": [],
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true,
+                    "selectMedia": {
+                        "distinguishSubjectName": true,
+                        "distinguishChannelName": true
+                    },
+                    "matchVideo": {
+                        "enableNestedUrl": true,
+                        "matchNestedUrl": "$^",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(url=(?<v>.+playlist.m3u8))",
+                        "cookies": "quality=1080P",
+                        "addHeadersToVideo": {
+                            "referer": "",
+                            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+  }
+}
+
+
+
+
+

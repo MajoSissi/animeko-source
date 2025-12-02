@@ -1,0 +1,28 @@
+[2025/12/2 20:24:35] Starting update process...
+[2025/12/2 20:24:35] Processing category: online (在线资源)
+[2025/12/2 20:24:35] Downloading https://sub.creamycake.org/v1/css1.json...
+[2025/12/2 20:24:38] ERROR: Failed to download https://sub.creamycake.org/v1/css1.json: fetch failed
+[2025/12/2 20:24:38] Using cached file for https://sub.creamycake.org/v1/css1.json
+[2025/12/2 20:24:38] Downloading https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json...
+[2025/12/2 20:24:40] Duplicate source skipped: AGE动漫 (www.agedm.org)
+[2025/12/2 20:24:40] Duplicate source skipped: 喵物次元 (www.mwcy.net)
+[2025/12/2 20:24:40] Duplicate source skipped: 风车动漫2 (www.dmla5.com)
+[2025/12/2 20:24:40] Downloading https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json...
+[2025/12/2 20:24:40] Duplicate source skipped: Aki动漫 (www.akianime.cc)
+[2025/12/2 20:24:40] Duplicate source skipped: 第一动漫 (anime.d1dm.xyz)
+[2025/12/2 20:24:40] Duplicate source skipped: 异世界动漫 (www.dmmiku.com)
+[2025/12/2 20:24:40] Duplicate source skipped: 爱看番 (www.ikfan.com)
+[2025/12/2 20:24:40] Duplicate source skipped: kimivod (cn.kimivod.com)
+[2025/12/2 20:24:40] Duplicate source skipped: MX动漫(mxdmp) (www.mxdmp.com)
+[2025/12/2 20:24:40] Duplicate source skipped: ssrfun (www.ssrfun.com)
+[2025/12/2 20:24:40] Duplicate source skipped: 樱花动漫 (www.yinghua2.com)
+[2025/12/2 20:24:40] Duplicate source skipped: 中国动漫网(可能有广告) (zgacgn.com)
+[2025/12/2 20:24:40] Downloading https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json...
+[2025/12/2 20:24:40] Duplicate source skipped: hanime1_720p (hanime1.me)
+[2025/12/2 20:24:40] Saved merged file to D:\Code-Project\animeko-source\mixed\online.json
+[2025/12/2 20:24:40] Processing category: bt (BT资源)
+[2025/12/2 20:24:40] Downloading https://sub.creamycake.org/v1/bt1.json...
+[2025/12/2 20:24:47] Downloading https://masofod.github.io/anibt.json...
+[2025/12/2 20:24:48] Saved merged file to D:\Code-Project\animeko-source\mixed\bt.json
+[2025/12/2 20:24:48] README.md updated.
+[2025/12/2 20:24:48] Update process completed.
