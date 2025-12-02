@@ -2,9 +2,9 @@
 
 <!-- AUTO_GENERATED_START -->
 
-### 聚合订阅源
+### 聚合订阅源 (已去重)
 
-| 分 类 | 链 接 (除了第一个都是加速链接, 订阅任意一个即可)|
+| 分 类 | 链 接 (除了第一个都是加速链接, 订阅其中一个即可)|
 |---|---|
 | 在线资源 | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/online.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/online.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/online.json |
 | BT资源 | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/bt.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/bt.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/bt.json |

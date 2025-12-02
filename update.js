@@ -39,7 +39,7 @@ function updateReadme() {
     }
 
     // Generate Mixed Sources Table (Markdown)
-    let mixedTable = '### 聚合订阅源\n\n';
+    let mixedTable = '### 聚合订阅源 (已去重)\n\n';
     mixedTable += '| 分 类 | 链 接 (除了第一个都是加速链接, 订阅其中一个即可)|\n';
     mixedTable += '|---|---|\n';
 
