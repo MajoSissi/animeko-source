@@ -21,3 +21,10 @@
 | BT资源 | https://masofod.github.io/anibt.json |
 
 <!-- AUTO_GENERATED_END -->
+
+### 官方订阅源 (应用自带源, 聚合源"不"包含)
+
+| 分 类 | 链 接 |
+|---|---|
+| 在线资源 | https://sub.creamycake.org/v1/css1.json |
+| BT资源 | https://sub.creamycake.org/v1/bt1.json |
