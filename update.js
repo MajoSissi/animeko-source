@@ -62,7 +62,7 @@ function updateReadme() {
     }
 
     // Generate Original Sources Table
-    let originalTable = '### 原始订阅源 (上面已包含)\n\n';
+    let originalTable = '### 三方订阅源 (上面已包含)\n\n';
     originalTable += '| 分 类 | 链 接 |\n|---|---|\n';
     
     for (const source of config.sources) {
