@@ -6,6 +6,7 @@
 
 | 分 类 | 链 接 (除了第一个都是加速链接, 订阅其中一个即可)|
 |---|---|
+| 在线+BT | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/all.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/all.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/all.json |
 | 在线资源 | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/online.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/online.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/online.json |
 | BT资源 | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/bt.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/bt.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/mixed/bt.json |
 

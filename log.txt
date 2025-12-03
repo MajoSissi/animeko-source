@@ -1,26 +1,14 @@
-[2025/12/2 20:28:28] Starting update process...
-[2025/12/2 20:28:28] Processing category: online (在线资源)
-[2025/12/2 20:28:28] Downloading https://sub.creamycake.org/v1/css1.json...
-[2025/12/2 20:28:30] Downloading https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json...
-[2025/12/2 20:28:32] Duplicate source skipped: AGE动漫 (www.agedm.org)
-[2025/12/2 20:28:32] Duplicate source skipped: 喵物次元 (www.mwcy.net)
-[2025/12/2 20:28:32] Duplicate source skipped: 风车动漫2 (www.dmla5.com)
-[2025/12/2 20:28:32] Downloading https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json...
-[2025/12/2 20:28:33] Duplicate source skipped: Aki动漫 (www.akianime.cc)
-[2025/12/2 20:28:33] Duplicate source skipped: 第一动漫 (anime.d1dm.xyz)
-[2025/12/2 20:28:33] Duplicate source skipped: 异世界动漫 (www.dmmiku.com)
-[2025/12/2 20:28:33] Duplicate source skipped: 爱看番 (www.ikfan.com)
-[2025/12/2 20:28:33] Duplicate source skipped: kimivod (cn.kimivod.com)
-[2025/12/2 20:28:33] Duplicate source skipped: MX动漫(mxdmp) (www.mxdmp.com)
-[2025/12/2 20:28:33] Duplicate source skipped: ssrfun (www.ssrfun.com)
-[2025/12/2 20:28:33] Duplicate source skipped: 樱花动漫 (www.yinghua2.com)
-[2025/12/2 20:28:33] Duplicate source skipped: 中国动漫网(可能有广告) (zgacgn.com)
-[2025/12/2 20:28:33] Downloading https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json...
-[2025/12/2 20:28:33] Duplicate source skipped: hanime1_720p (hanime1.me)
-[2025/12/2 20:28:33] Saved merged file to D:\Code-Project\animeko-source\mixed\online.json
-[2025/12/2 20:28:33] Processing category: bt (BT资源)
-[2025/12/2 20:28:33] Downloading https://sub.creamycake.org/v1/bt1.json...
-[2025/12/2 20:28:34] Downloading https://masofod.github.io/anibt.json...
-[2025/12/2 20:28:35] Saved merged file to D:\Code-Project\animeko-source\mixed\bt.json
-[2025/12/2 20:28:35] README.md updated.
-[2025/12/2 20:28:35] Update process completed.
+[12/3/2025, 9:41:22 AM] Starting update process...
+[12/3/2025, 9:41:22 AM] Processing category: online (在线资源)
+[12/3/2025, 9:41:22 AM] Downloading https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json...
+[12/3/2025, 9:41:23 AM] Downloading https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json...
+[12/3/2025, 9:41:23 AM] Duplicate source skipped in category: Aki动漫 (www.akianime.cc)
+[12/3/2025, 9:41:23 AM] Downloading https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json...
+[12/3/2025, 9:41:24 AM] Duplicate source skipped in category: hanime1_720p (hanime1.me)
+[12/3/2025, 9:41:24 AM] Saved merged file to /workspaces/animeko-source/mixed/online.json
+[12/3/2025, 9:41:24 AM] Processing category: bt (BT资源)
+[12/3/2025, 9:41:24 AM] Downloading https://masofod.github.io/anibt.json...
+[12/3/2025, 9:41:24 AM] Saved merged file to /workspaces/animeko-source/mixed/bt.json
+[12/3/2025, 9:41:24 AM] Saved merged file to /workspaces/animeko-source/mixed/all.json
+[12/3/2025, 9:41:24 AM] Source processing completed.
+[12/3/2025, 9:41:24 AM] README.md updated.
