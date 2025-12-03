@@ -6,7 +6,7 @@ module.exports = {
     ],
     sources: [
         {
-            name: "在线资源",
+            name: "在线",
             tag: "online",
             urls: [
                 "https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json",
@@ -15,7 +15,7 @@ module.exports = {
             ]
         },
         {
-            name: "BT资源",
+            name: "BT",
             tag: "bt",
             urls: [
                 "https://masofod.github.io/anibt.json"
