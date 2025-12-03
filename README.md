@@ -1,4 +1,4 @@
-# [Animeko 订阅源/数据源](https://github.com/open-ani/animeko)
+# [Animeko 聚合订阅源/数据源](https://github.com/open-ani/animeko)
 
 <!-- AUTO_GENERATED_START -->
 
