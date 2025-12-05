@@ -21,7 +21,7 @@ function updateReadme() {
     // Add "综合资源" first
     const allName = "在线+BT";
     const allFileName = "all.json";
-    const allRawUrl = `https://raw.githubusercontent.com/${REPO}/main/mixed/${allFileName}`;
+    const allRawUrl = `https://raw.githubusercontent.com/${REPO}/main/dist/${allFileName}`;
     let allLinksHtml = `${allRawUrl}`;
     config.proxy.forEach((proxyUrl) => {
         const shortRawUrl = allRawUrl.replace(/^https?:\/\//, '');
@@ -34,7 +34,7 @@ function updateReadme() {
         const category = source.tag;
         const displayName = source.name;
         const fileName = `${category}.json`;
-        const rawUrl = `https://raw.githubusercontent.com/${REPO}/main/mixed/${fileName}`;
+        const rawUrl = `https://raw.githubusercontent.com/${REPO}/main/dist/${fileName}`;
         
         let linksHtml = `${rawUrl}`;
         
@@ -50,12 +50,22 @@ function updateReadme() {
 
     // Generate Original Sources Table
     let originalTable = '### 三方订阅源 (上面已包含)\n\n';
-    originalTable += '| 分 类 | 链 接 |\n|---|---|\n';
+    originalTable += '| 分 类 | 来 源 | 链 接 |\n|---|---|---|\n';
     
     for (const source of config.sources) {
         const displayName = source.name;
         for (const link of source.urls) {
-            originalTable += `| ${displayName} | ${link} |\n`;
+            let url = link;
+            let srcLink = '';
+
+            if (typeof link === 'object' && link !== null) {
+                url = link.url;
+                if (link.src) {
+                    srcLink = `[源](${link.src})`;
+                }
+            }
+
+            originalTable += `| ${displayName} | ${srcLink} | ${url} |\n`;
         }
     }
 

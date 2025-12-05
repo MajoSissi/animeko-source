@@ -2923,20 +2923,6 @@
         }
       },
       {
-        "factoryId": "rss",
-        "version": 1,
-        "arguments": {
-          "name": "nyaa-里",
-          "description": "H~低调使用~",
-          "iconUrl": "https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/favicon/nyaa.si_H.png",
-          "searchConfig": {
-            "searchUrl": "https://sukebei.nyaa.si/?page=rss&q={keyword}&c=0_0&f=0",
-            "filterByEpisodeSort": true,
-            "filterBySubjectName": false
-          }
-        }
-      },
-      {
         "factoryId": "web-selector",
         "version": 2,
         "arguments": {
@@ -3091,6 +3077,20 @@
             "searchUrl": "https://share.acgnx.cc/rss.xml?keyword={keyword}",
             "filterByEpisodeSort": true,
             "filterBySubjectName": true
+          }
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "nyaa-里",
+          "description": "H~低调使用~",
+          "iconUrl": "https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/favicon/nyaa.si_H.png",
+          "searchConfig": {
+            "searchUrl": "https://sukebei.nyaa.si/?page=rss&q={keyword}&c=0_0&f=0",
+            "filterByEpisodeSort": true,
+            "filterBySubjectName": false
           }
         }
       }
