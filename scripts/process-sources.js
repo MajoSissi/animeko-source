@@ -23,7 +23,7 @@ function checkFilter(value, filter) {
 }
 
 async function processSources() {
-    fs.writeFileSync(path.join(rootDir, 'log.txt'), ''); // Clear log file
+    fs.writeFileSync(path.join(rootDir, 'log'), ''); // Clear log file
     log('Starting update process...');
 
     if (!fs.existsSync(distBaseDir)) {

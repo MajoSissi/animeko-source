@@ -1,5 +1,7 @@
 # [Animeko 聚合订阅源/数据源](https://github.com/open-ani/animeko)
 
+[![Update Source](https://github.com/MajoSissi/animeko-source/actions/workflows/update.yml/badge.svg)](https://github.com/MajoSissi/animeko-source/actions/workflows/update.yml)
+
 <!-- AUTO_GENERATED_START -->
 
 ### 聚合订阅源 (已去重)
@@ -10,7 +12,7 @@
 | 在线 | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/online.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/online.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/online.json |
 | BT | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/bt.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/bt.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/bt.json |
 
-### 三方订阅源 (上面已包含)
+### 三方订阅源 (聚合源"已包含")
 
 | 分 类 | 来 源 | 链 接 |
 |---|---|---|
@@ -22,7 +24,7 @@
 
 <!-- AUTO_GENERATED_END -->
 
-### 官方订阅源 (应用自带源, 聚合源"不"包含)
+### 官方订阅源 (应用自带源 - 聚合源"不包含")
 
 | 分 类 | 链 接 |
 |---|---|
