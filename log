@@ -1,23 +1,23 @@
-[2025/12/20 00:55:04] Starting update process...
-[2025/12/20 00:55:04] ================================================================================
-[2025/12/20 00:55:04] Processing category: online (在线)
-[2025/12/20 00:55:04] ================================================================================
-[2025/12/20 00:55:04] Downloading https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json...
-[2025/12/20 00:55:04] Downloading https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json...
-[2025/12/20 00:55:05] Duplicate source skipped in category: Aki动漫 (www.akianime.cc)
-[2025/12/20 00:55:05] Downloading https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json...
-[2025/12/20 00:55:09] [Filter] Skipped nyaa-里 (sukebei.nyaa.si) - Item Exclude Filter: sukebei.nyaa.si
-[2025/12/20 00:55:09] Duplicate source skipped in category: hanime1_720p (hanime1.me)
-[2025/12/20 00:55:09] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/online.json
-[2025/12/20 00:55:09] ================================================================================
-[2025/12/20 00:55:09] Processing category: bt (BT)
-[2025/12/20 00:55:09] ================================================================================
-[2025/12/20 00:55:09] Downloading https://masofod.github.io/anibt.json...
-[2025/12/20 00:55:09] Downloading https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json...
-[2025/12/20 00:55:10] [Filter] Skipped hanime1_1080p (hanime1.me) - Item Filter: sukebei.nyaa.si
-[2025/12/20 00:55:10] [Filter] Skipped hanime1_720p (hanime1.me) - Item Filter: sukebei.nyaa.si
-[2025/12/20 00:55:10] [Filter] Skipped hanime1_one.me (hanimeone.me) - Item Filter: sukebei.nyaa.si
-[2025/12/20 00:55:10] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/bt.json
-[2025/12/20 00:55:10] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/all.json
-[2025/12/20 00:55:10] Source processing completed.
-[2025/12/20 00:55:10] README.md updated.
+[2025/12/21 01:02:15] Starting update process...
+[2025/12/21 01:02:15] ================================================================================
+[2025/12/21 01:02:15] Processing category: online (在线)
+[2025/12/21 01:02:15] ================================================================================
+[2025/12/21 01:02:15] Downloading https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json...
+[2025/12/21 01:02:16] Downloading https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json...
+[2025/12/21 01:02:16] Duplicate source skipped in category: Aki动漫 (www.akianime.cc)
+[2025/12/21 01:02:16] Downloading https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json...
+[2025/12/21 01:02:21] [Filter] Skipped nyaa-里 (sukebei.nyaa.si) - Item Exclude Filter: sukebei.nyaa.si
+[2025/12/21 01:02:21] Duplicate source skipped in category: hanime1_720p (hanime1.me)
+[2025/12/21 01:02:21] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/online.json
+[2025/12/21 01:02:21] ================================================================================
+[2025/12/21 01:02:21] Processing category: bt (BT)
+[2025/12/21 01:02:21] ================================================================================
+[2025/12/21 01:02:21] Downloading https://masofod.github.io/anibt.json...
+[2025/12/21 01:02:21] Downloading https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json...
+[2025/12/21 01:02:21] [Filter] Skipped hanime1_1080p (hanime1.me) - Item Filter: sukebei.nyaa.si
+[2025/12/21 01:02:21] [Filter] Skipped hanime1_720p (hanime1.me) - Item Filter: sukebei.nyaa.si
+[2025/12/21 01:02:21] [Filter] Skipped hanime1_one.me (hanimeone.me) - Item Filter: sukebei.nyaa.si
+[2025/12/21 01:02:21] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/bt.json
+[2025/12/21 01:02:21] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/all.json
+[2025/12/21 01:02:21] Source processing completed.
+[2025/12/21 01:02:21] README.md updated.
