@@ -4,7 +4,7 @@
 
 <!-- AUTO_GENERATED_START -->
 
-### 聚合订阅源 (已去重)
+### 聚合三方订阅源 (已去重)
 
 | 分 类 | 链 接 (除了第一个都是加速链接, 订阅其中一个即可)|
 |---|---|
@@ -12,7 +12,7 @@
 | 在线 | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/online.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/online.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/online.json |
 | BT | https://raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/bt.json<br><br>https://ghfast.top/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/bt.json<br><br>https://gh-proxy.com/raw.githubusercontent.com/MajoSissi/animeko-source/main/dist/bt.json |
 
-### 三方订阅源 (聚合源"已包含")
+### 三方订阅源 (单)
 
 | 分 类 | 来 源 | 链 接 |
 |---|---|---|
