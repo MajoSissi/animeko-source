@@ -1,0 +1,41 @@
+name: Update README on changes
+
+on:
+  push:
+    paths:
+      - 'README.md'
+      - 'scripts/update-readme.js'
+
+jobs:
+  update-readme:
+    name: Run update-readme script
+    # 跳过 Action 推送的触发
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run update-readme
+        run: |
+          node scripts/update-readme.js
+
+      - name: Commit README if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add README.md || true
+            git commit -m "chore: update README (automated)" || true
+            git push
+          else
+            echo "No changes to commit"
+          fi

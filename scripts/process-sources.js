@@ -26,6 +26,7 @@ async function processSources() {
     fs.writeFileSync(path.join(rootDir, 'log'), ''); // Clear log file
     log('Starting update process...');
 
+    // 确保输出目录存在
     if (!fs.existsSync(distBaseDir)) {
         fs.mkdirSync(distBaseDir, { recursive: true });
     }
@@ -40,10 +41,11 @@ async function processSources() {
         const globalExcludeFilter = source.excludeFilter;
 
         log('================================================================================');
-        log(`Processing category: ${category} (${source.name})`);
+        log(`处理分类: ${category} (${source.name})`);
         log('================================================================================');
         
         const categorySourceDir = path.join(sourceBaseDir, category);
+        // 确保分类的源目录存在
         if (!fs.existsSync(categorySourceDir)) {
             fs.mkdirSync(categorySourceDir, { recursive: true });
         }
@@ -53,12 +55,13 @@ async function processSources() {
         const configuredFiles = new Set();
 
         for (const link of links) {
+            // 链接配置必须为对象并包含 file 字段
             if (typeof link !== 'object' || link === null) {
-                logError(`Invalid link configuration (must be object): ${JSON.stringify(link)}`);
+                logError(`无效的链接配置（必须为对象）： ${JSON.stringify(link)}`);
                 continue;
             }
             if (!link.file) {
-                logError(`Missing 'file' property in link configuration: ${JSON.stringify(link)}`);
+                logError(`链接配置缺少 'file' 字段： ${JSON.stringify(link)}`);
                 continue;
             }
 
@@ -74,28 +77,29 @@ async function processSources() {
 
             try {
                 if (downloadUrl) {
-                    log(`Downloading ${downloadUrl}...`);
+                    // 有下载地址则尝试下载并保存到本地缓存
+                    log(`下载中： ${downloadUrl} ...`);
                     content = await downloadFile(downloadUrl);
                     // 验证是否为有效 JSON
                     JSON.parse(content);
                     fs.writeFileSync(filePath, content, 'utf8');
                 } else {
-                    // 如果没有 url，尝试直接读取本地文件
+                    // 无 url 时尝试读取本地已有文件
                     if (fs.existsSync(filePath)) {
-                        log(`Using local file: ${fileName}`);
+                        log(`使用本地文件： ${fileName}`);
                         content = fs.readFileSync(filePath, 'utf8');
                     } else {
-                        logError(`No URL provided and local file not found: ${fileName}`);
+                        logError(`未提供 URL，且本地文件不存在： ${fileName}`);
                         continue;
                     }
                 }
             } catch (err) {
-                logError(`Failed to download ${downloadUrl}: ${err.message}`);
+                logError(`下载失败： ${downloadUrl}，错误： ${err.message}`);
                 if (fs.existsSync(filePath)) {
-                    log(`Using cached file for ${downloadUrl}`);
+                    log(`使用缓存文件： ${fileName}`);
                     content = fs.readFileSync(filePath, 'utf8');
                 } else {
-                    logError(`No cache available for ${downloadUrl}, skipping.`);
+                    logError(`没有可用缓存，跳过： ${downloadUrl}`);
                     continue;
                 }
             }
@@ -112,32 +116,33 @@ async function processSources() {
                                 domain = new URL(searchUrl).hostname;
                             }
                         } catch (e) {
-                            // Ignore URL parsing errors
+                            // 忽略 URL 解析错误
                         }
 
+                        // 全局 / 项目级别的包含/排除过滤
                         if (globalFilter && !checkFilter(domain, globalFilter)) {
-                            log(`[Filter] Skipped ${sourceItem.arguments?.name} (${domain}) - Global Filter: ${globalFilter}`);
+                            log(`[过滤] 跳过 ${sourceItem.arguments?.name} (${domain}) - 全局包含过滤: ${globalFilter}`);
                             continue;
                         }
                         if (itemFilter && !checkFilter(domain, itemFilter)) {
-                            log(`[Filter] Skipped ${sourceItem.arguments?.name} (${domain}) - Item Filter: ${itemFilter}`);
+                            log(`[过滤] 跳过 ${sourceItem.arguments?.name} (${domain}) - 条目包含过滤: ${itemFilter}`);
                             continue;
                         }
 
                         if (globalExcludeFilter && checkFilter(domain, globalExcludeFilter)) {
-                            log(`[Filter] Skipped ${sourceItem.arguments?.name} (${domain}) - Global Exclude Filter: ${globalExcludeFilter}`);
+                            log(`[过滤] 跳过 ${sourceItem.arguments?.name} (${domain}) - 全局排除过滤: ${globalExcludeFilter}`);
                             continue;
                         }
                         if (itemExcludeFilter && checkFilter(domain, itemExcludeFilter)) {
-                            log(`[Filter] Skipped ${sourceItem.arguments?.name} (${domain}) - Item Exclude Filter: ${itemExcludeFilter}`);
+                            log(`[过滤] 跳过 ${sourceItem.arguments?.name} (${domain}) - 条目排除过滤: ${itemExcludeFilter}`);
                             continue;
                         }
 
-                        // Category level deduplication
+                        // 分类级别去重
                         let addToCategory = true;
                         if (domain) {
                             if (seenDomains.has(domain)) {
-                                log(`Duplicate source skipped in category: ${sourceItem.arguments?.name} (${domain})`);
+                                log(`分类内重复，跳过： ${sourceItem.arguments?.name} (${domain})`);
                                 addToCategory = false;
                             } else {
                                 seenDomains.add(domain);
@@ -147,11 +152,11 @@ async function processSources() {
                             mergedMediaSources.push(sourceItem);
                         }
 
-                        // Global level deduplication
+                        // 全局级别去重
                         let addToAll = true;
                         if (domain) {
                             if (allSeenDomains.has(domain)) {
-                                // log(`Duplicate source skipped in all: ${sourceItem.arguments?.name} (${domain})`);
+                                // log(`全局中重复，跳过： ${sourceItem.arguments?.name} (${domain})`);
                                 addToAll = false;
                             } else {
                                 allSeenDomains.add(domain);
@@ -167,14 +172,14 @@ async function processSources() {
             }
         }
 
-        // Clean up unconfigured files
+        // 清理未在配置中声明的本地文件
         try {
             if (fs.existsSync(categorySourceDir)) {
                 const existingFiles = fs.readdirSync(categorySourceDir);
                 for (const file of existingFiles) {
                     if (!configuredFiles.has(file) && file.endsWith('.json')) {
                         fs.unlinkSync(path.join(categorySourceDir, file));
-                        log(`Deleted unconfigured file: ${file}`);
+                        log(`删除未配置的文件： ${file}`);
                     }
                 }
             }
@@ -193,7 +198,7 @@ async function processSources() {
         log(`Saved merged file to ${distFilePath}`);
     }
 
-    // Save all.json
+    // 保存合并后的 all.json
     const allFilePath = path.join(distBaseDir, 'all.json');
     const allResult = {
         exportedMediaSourceDataList: {

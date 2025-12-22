@@ -3,7 +3,6 @@ const path = require('path');
 const { log, rootDir } = require('./utils');
 const config = require('../config.js');
 
-// 仓库信息，用于生成链接
 const REPO = process.env.GITHUB_REPOSITORY || 'MajoSissi/animeko-source';
 
 function updateReadme() {
@@ -13,12 +12,10 @@ function updateReadme() {
         readmeContent = fs.readFileSync(readmePath, 'utf8');
     }
 
-    // Generate Mixed Sources Table (Markdown)
     let mixedTable = '### 聚合三方订阅源 (已去重)\n\n';
     mixedTable += '| 分 类 | 链 接 (除了第一个都是加速链接, 订阅其中一个即可)|\n';
     mixedTable += '|---|---|\n';
 
-    // Add "综合资源" first
     const allName = "在线+BT";
     const allFileName = "all.json";
     const allRawUrl = `https://raw.githubusercontent.com/${REPO}/main/dist/${allFileName}`;
@@ -38,7 +35,6 @@ function updateReadme() {
         
         let linksHtml = `${rawUrl}`;
         
-        // Proxy Links
         config.proxy.forEach((proxyUrl, index) => {
             const shortRawUrl = rawUrl.replace(/^https?:\/\//, '');
             const fullUrl = proxyUrl + shortRawUrl;
@@ -48,8 +44,7 @@ function updateReadme() {
         mixedTable += `| ${displayName} | ${linksHtml} |\n`;
     }
 
-    // Generate Original Sources Table
-    let originalTable = '### 三方订阅源 (散)\n\n';
+    let originalTable = '### 三方订阅源 (单)\n\n';
     originalTable += '| 分 类 | 来 源 | 链 接 |\n|---|---|---|\n';
     
     for (const source of config.sources) {
@@ -77,15 +72,7 @@ function updateReadme() {
         const regex = new RegExp(`${startMarker}[\\s\\S]*?${endMarker}`);
         readmeContent = readmeContent.replace(regex, newContent);
     } else {
-        // Try to find old markers to replace if they exist
-        const oldStart = '<!-- PROXY_LINKS_START -->';
-        const oldEnd = '<!-- PROXY_LINKS_END -->';
-        if (readmeContent.includes(oldStart) && readmeContent.includes(oldEnd)) {
-             const regex = new RegExp(`${oldStart}[\\s\\S]*?${oldEnd}`);
-             readmeContent = readmeContent.replace(regex, newContent);
-        } else {
-             readmeContent += `\n\n${newContent}`;
-        }
+        readmeContent += `\n\n${newContent}`;
     }
 
     fs.writeFileSync(readmePath, readmeContent, 'utf8');
