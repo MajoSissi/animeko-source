@@ -14,7 +14,7 @@ function updateReadme() {
     }
 
     // Generate Mixed Sources Table (Markdown)
-    let mixedTable = '### 聚合订阅源 (已去重)\n\n';
+    let mixedTable = '### 聚合三方订阅源 (已去重)\n\n';
     mixedTable += '| 分 类 | 链 接 (除了第一个都是加速链接, 订阅其中一个即可)|\n';
     mixedTable += '|---|---|\n';
 
@@ -49,7 +49,7 @@ function updateReadme() {
     }
 
     // Generate Original Sources Table
-    let originalTable = '### 三方订阅源 (聚合源"已包含")\n\n';
+    let originalTable = '### 三方订阅源 (散)\n\n';
     originalTable += '| 分 类 | 来 源 | 链 接 |\n|---|---|---|\n';
     
     for (const source of config.sources) {
