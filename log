@@ -1,23 +1,23 @@
-[2025/12/30 00:58:31] Starting update process...
-[2025/12/30 00:58:31] ================================================================================
-[2025/12/30 00:58:31] 处理分类: online (在线)
-[2025/12/30 00:58:31] ================================================================================
-[2025/12/30 00:58:31] 下载中： https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json ...
-[2025/12/30 00:58:31] 下载中： https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json ...
-[2025/12/30 00:58:31] 分类内重复，跳过： Aki动漫 (www.akianime.cc)
-[2025/12/30 00:58:31] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
-[2025/12/30 00:58:35] [过滤] 跳过 nyaa-里 (sukebei.nyaa.si) - 条目排除过滤: sukebei.nyaa.si
-[2025/12/30 00:58:35] 分类内重复，跳过： hanime1_720p (hanime1.me)
-[2025/12/30 00:58:35] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/online.json
-[2025/12/30 00:58:35] ================================================================================
-[2025/12/30 00:58:35] 处理分类: bt (BT)
-[2025/12/30 00:58:35] ================================================================================
-[2025/12/30 00:58:35] 下载中： https://masofod.github.io/anibt.json ...
-[2025/12/30 00:58:35] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
-[2025/12/30 00:58:35] [过滤] 跳过 hanime1_1080p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
-[2025/12/30 00:58:35] [过滤] 跳过 hanime1_720p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
-[2025/12/30 00:58:35] [过滤] 跳过 hanime1_one.me (hanimeone.me) - 条目包含过滤: sukebei.nyaa.si
-[2025/12/30 00:58:35] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/bt.json
-[2025/12/30 00:58:35] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/all.json
-[2025/12/30 00:58:35] Source processing completed.
-[2025/12/30 00:58:35] README.md updated.
+[2025/12/31 00:59:42] Starting update process...
+[2025/12/31 00:59:42] ================================================================================
+[2025/12/31 00:59:42] 处理分类: online (在线)
+[2025/12/31 00:59:42] ================================================================================
+[2025/12/31 00:59:42] 下载中： https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json ...
+[2025/12/31 00:59:43] 下载中： https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json ...
+[2025/12/31 00:59:43] 分类内重复，跳过： Aki动漫 (www.akianime.cc)
+[2025/12/31 00:59:43] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
+[2025/12/31 00:59:47] [过滤] 跳过 nyaa-里 (sukebei.nyaa.si) - 条目排除过滤: sukebei.nyaa.si
+[2025/12/31 00:59:47] 分类内重复，跳过： hanime1_720p (hanime1.me)
+[2025/12/31 00:59:47] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/online.json
+[2025/12/31 00:59:47] ================================================================================
+[2025/12/31 00:59:47] 处理分类: bt (BT)
+[2025/12/31 00:59:47] ================================================================================
+[2025/12/31 00:59:47] 下载中： https://masofod.github.io/anibt.json ...
+[2025/12/31 00:59:47] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
+[2025/12/31 00:59:47] [过滤] 跳过 hanime1_1080p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
+[2025/12/31 00:59:47] [过滤] 跳过 hanime1_720p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
+[2025/12/31 00:59:47] [过滤] 跳过 hanime1_one.me (hanimeone.me) - 条目包含过滤: sukebei.nyaa.si
+[2025/12/31 00:59:47] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/bt.json
+[2025/12/31 00:59:47] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/all.json
+[2025/12/31 00:59:47] Source processing completed.
+[2025/12/31 00:59:47] README.md updated.
