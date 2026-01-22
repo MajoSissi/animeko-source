@@ -35,8 +35,8 @@
               "preferShorterName": false
             },
             "selectorSubjectFormatIndexed": {
-              "selectNames": "#home-rows-wrapper > div.content-padding-new > div > div.col-xs-12.search-doujin-videos.hidden-sm.hidden-md.hidden-lg.hidden-xl.hover-lighter.multiple-link-wrapper > div > div > div > div.card-mobile-title",
-              "selectLinks": "#home-rows-wrapper > div.content-padding-new > div > div.col-xs-12.search-doujin-videos.hidden-sm.hidden-md.hidden-lg.hidden-xl.hover-lighter.multiple-link-wrapper > a",
+              "selectNames": "#home-rows-wrapper > div.content-padding-new > div > div > div > div > a > div.title",
+              "selectLinks": "#home-rows-wrapper > div.content-padding-new > div > div > div> div > a",
               "preferShorterName": true
             },
             "channelFormatId": "index-grouped",
@@ -93,8 +93,8 @@
               "preferShorterName": false
             },
             "selectorSubjectFormatIndexed": {
-              "selectNames": "#home-rows-wrapper > div.content-padding-new > div > div.col-xs-12.search-doujin-videos.hidden-sm.hidden-md.hidden-lg.hidden-xl.hover-lighter.multiple-link-wrapper > div > div > div > div.card-mobile-title",
-              "selectLinks": "#home-rows-wrapper > div.content-padding-new > div > div.col-xs-12.search-doujin-videos.hidden-sm.hidden-md.hidden-lg.hidden-xl.hover-lighter.multiple-link-wrapper > a",
+              "selectNames": "#home-rows-wrapper > div.content-padding-new > div > div > div > div > a > div.title",
+              "selectLinks": "#home-rows-wrapper > div.content-padding-new > div > div > div> div > a",
               "preferShorterName": true
             },
             "channelFormatId": "index-grouped",
@@ -151,8 +151,8 @@
               "preferShorterName": false
             },
             "selectorSubjectFormatIndexed": {
-              "selectNames": "#home-rows-wrapper > div.content-padding-new > div > div.col-xs-12.search-doujin-videos.hidden-sm.hidden-md.hidden-lg.hidden-xl.hover-lighter.multiple-link-wrapper > div > div > div > div.card-mobile-title",
-              "selectLinks": "#home-rows-wrapper > div.content-padding-new > div > div.col-xs-12.search-doujin-videos.hidden-sm.hidden-md.hidden-lg.hidden-xl.hover-lighter.multiple-link-wrapper > a",
+              "selectNames": "#home-rows-wrapper > div.content-padding-new > div > div > div > div > a > div.title",
+              "selectLinks": "#home-rows-wrapper > div.content-padding-new > div > div > div> div > a",
               "preferShorterName": true
             },
             "channelFormatId": "index-grouped",
@@ -192,4 +192,5 @@
     ]
   }
 }
+
 
