@@ -202,7 +202,7 @@
         "version": 2,
         "arguments": {
           "name": "新动漫网",
-          "description": "可看里番",
+          "description": "可看里番(搜索有验证已失效)",
           "iconUrl": "https://www.xdmw.cc/template/kuhei3/statics/img/logo_m.png",
           "searchConfig": {
             "searchUrl": "https://www.xdmw.cc/vodsearch/{keyword}----------1---.html",
@@ -1113,7 +1113,7 @@
         "arguments": {
           "name": "佩可爱动漫",
           "description": "",
-          "iconUrl": "https://www.miaoaaa.com/wp-content/uploads/2023/09/pekolove.com_.png",
+          "iconUrl": "https://acg.pekolove.net/wp-content/uploads/yier-48.gif",
           "searchConfig": {
             "searchUrl": "https://acg.pekolove.net/?s={keyword}",
             "searchUseOnlyFirstWord": false,
@@ -1121,14 +1121,14 @@
             "searchUseSubjectNamesCount": 1,
             "rawBaseUrl": "",
             "requestInterval": 3000,
-            "subjectFormatId": "a",
+            "subjectFormatId": "indexed",
             "selectorSubjectFormatA": {
               "selectLists": ".wp-block-post-title > a",
               "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
-              "selectNames": "",
-              "selectLinks": "",
+              "selectNames": "#ag-main-container .anime-resource-unit-wrapper-complex-v9 p a",
+              "selectLinks": "#ag-main-container .anime-resource-unit-wrapper-complex-v9 p a",
               "preferShorterName": true
             },
             "selectorSubjectFormatJsonPathIndexed": {
@@ -2068,6 +2068,71 @@
               "matchNestedUrl": "$^",
               "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(url=(?<v>.+playlist.m3u8))",
               "cookies": "quality=1080P",
+              "addHeadersToVideo": {
+                "referer": "",
+                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+              }
+            }
+          }
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
+          "name": "黑猫动漫",
+          "description": "",
+          "iconUrl": "https://m.baimaodm.com/hdst/hm_pic/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://m.baimaodm.com/s_all?kw={keyword}&pagesize=24&pageindex={page}",
+            "searchUseOnlyFirstWord": false,
+            "searchRemoveSpecial": true,
+            "searchUseSubjectNamesCount": 1,
+            "rawBaseUrl": "",
+            "requestInterval": 3000,
+            "subjectFormatId": "indexed",
+            "selectorSubjectFormatA": {
+              "selectLists": "div.video-info-header > a",
+              "preferShorterName": true
+            },
+            "selectorSubjectFormatIndexed": {
+              "selectNames": ".item > .itemtext",
+              "selectLinks": ".item > a",
+              "preferShorterName": true
+            },
+            "selectorSubjectFormatJsonPathIndexed": {
+              "selectLinks": "$[*]['url', 'link']",
+              "selectNames": "$[*]['title','name']",
+              "preferShorterName": true
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": "#play_tabs .menu0 li",
+              "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+              "selectEpisodeLists": "#main0 .movurl",
+              "selectEpisodesFromList": "a",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "selectorChannelFormatNoChannel": {
+              "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+              "selectEpisodeLinks": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "defaultResolution": "1080P",
+            "defaultSubtitleLanguage": "CHS",
+            "onlySupportsPlayers": [],
+            "filterByEpisodeSort": true,
+            "filterBySubjectName": true,
+            "selectMedia": {
+              "distinguishSubjectName": true,
+              "distinguishChannelName": true
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+              "cookies": "quality=1080",
               "addHeadersToVideo": {
                 "referer": "",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
