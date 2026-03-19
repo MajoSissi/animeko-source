@@ -18,8 +18,10 @@
 |---|---|---|
 | 在线 | [源](https://github.com/cxay666/ani-yuan) | https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json |
 | 在线 | [源](https://github.com/Nier4ever/ani-sub) | https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json |
+| 在线 | [源](https://gitee.com/w658/configs-online) | https://gitee.com/w658/configs-online/raw/master/animeko-prime.json |
 | 在线 | [源](https://gitee.com/wan0ge/extract-pure-links) | https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json |
 | BT |  | https://masofod.github.io/anibt.json |
+| BT | [源](https://gitee.com/w658/configs-online) | https://gitee.com/w658/configs-online/raw/master/animeko-prime-bt.json |
 | BT | [源](https://gitee.com/wan0ge/extract-pure-links) | https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json |
 
 <!-- AUTO_GENERATED_END -->
