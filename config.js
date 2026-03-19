@@ -51,6 +51,11 @@ module.exports = {
                     url: "https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json"
                 },
                 {
+                    file: "animeko-prime.json",
+                    src: "https://gitee.com/w658/configs-online",
+                    url: "https://gitee.com/w658/configs-online/raw/master/animeko-prime.json"
+                },
+                {
                     file: "H.json",
                     src: "https://gitee.com/wan0ge/extract-pure-links",
                     excludeFilter: "sukebei.nyaa.si",
@@ -65,6 +70,11 @@ module.exports = {
                 {
                     file: "anibt.json",
                     url: "https://masofod.github.io/anibt.json"
+                },
+                {
+                    file: "animeko-prime-bt.json",
+                    src: "https://gitee.com/w658/configs-online",
+                    url: "https://gitee.com/w658/configs-online/raw/master/animeko-prime-bt.json"
                 },
                 {
                     file: "H.json",
