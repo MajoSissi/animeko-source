@@ -3,8 +3,10 @@ name: Update README on changes
 on:
   push:
     paths:
+      - 'config.js'
       - 'README.md'
       - 'scripts/update-readme.js'
+  workflow_dispatch:
 
 jobs:
   update-readme:
