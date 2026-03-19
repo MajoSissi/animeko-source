@@ -47,14 +47,52 @@
         "factoryId": "rss",
         "version": 1,
         "arguments": {
-          "name": "nyaa-里",
-          "description": "H~低调使用~",
-          "iconUrl": "https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/favicon/nyaa.si_H.png",
+          "name": "蜜柑计划",
+          "description": "直连，蜜柑计划中文站，网址：https://mikanime.tv/",
+          "iconUrl": "https://mikanime.tv/images/mikan-pic.png",
           "searchConfig": {
-            "searchUrl": "https://sukebei.nyaa.si/?page=rss&q={keyword}&c=0_0&f=0",
-            "filterByEpisodeSort": true,
-            "filterBySubjectName": false
-          }
+            "searchUrl": "https://mikanime.tv/RSS/Search?searchstr={keyword}"
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "AnimeGarden",
+          "description": "直连，动漫花园，网址：https://animes.garden/",
+          "iconUrl": "https://animes.garden/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://api.animes.garden/feed.xml?include={keyword}&type=动画"
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "Nyaa[CN]",
+          "description": "直连，Nyaa.si镜像站，网址：https://nyaa.land/",
+          "iconUrl": "https://gitee.com/w658/configs-online/raw/master/animeko/favicon/Nyaa[CN].png",
+          "searchConfig": {
+            "searchUrl": "https://nyaa.land/?page=rss&q={keyword}&c=1_0&f=0"
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "Nyaa[H]",
+          "description": "魔法，NSFW，Nyaa里站，网站：https://sukebei.nyaa.si/",
+          "iconUrl": "https://gitee.com/w658/configs-online/raw/master/animeko/favicon/Nyaa[H].png",
+          "searchConfig": {
+            "searchUrl": "https://sukebei.nyaa.si/?page=rss&q={keyword}&c=1_1&f=0&p={page}"
+          },
+          "tier": 2
         }
       }
     ]

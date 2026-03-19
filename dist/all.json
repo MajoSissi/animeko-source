@@ -3381,6 +3381,154 @@
         "factoryId": "web-selector",
         "version": 2,
         "arguments": {
+          "name": "omofun111",
+          "description": "直连，来自omofun动漫视频网，导航：https://enlienli.link/",
+          "iconUrl": "https://enlienli.link/upload/mxprocms/20230707-1/49f4b8a7fd5cbf77ffcfa7a52e755675.gif",
+          "searchConfig": {
+            "searchUrl": "https://enlienli.link/vod/search.html?wd={keyword}",
+            "searchUseOnlyFirstWord": true,
+            "subjectFormatId": "a",
+            "selectorSubjectFormatA": {
+              "selectLists": ".module-card-item > .module-card-item-info > .module-card-item-title>a",
+              "preferShorterName": false
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": "div.module-tab-items-box > .module-tab-item > span",
+              "matchChannelName": "(.*独家.*)",
+              "selectEpisodeLists": ".module-play-list-content",
+              "selectEpisodesFromList": "a",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+              "cookies": "quality=1080",
+              "addHeadersToVideo": {
+                "referer": ""
+              }
+            }
+          },
+          "tier": 0
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
+          "name": "咕咕番",
+          "description": "直连，来自咕咕番，导航：https://fb.gugufan.top/",
+          "iconUrl": "https://www.gugu3.com/upload/site/20240809-1/7128d3562abaed14571d6227e1240aab.png",
+          "searchConfig": {
+            "searchUrl": "https://www.gugu3.com/index.php/vod/search.html?wd={keyword}",
+            "searchUseOnlyFirstWord": true,
+            "subjectFormatId": "a",
+            "selectorSubjectFormatA": {
+              "selectLists": "div > div > div > div > div.detail-info > a",
+              "preferShorterName": true
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": ".anthology-tab  .swiper-wrapper a",
+              "matchChannelName": "^(?!.*失效)()?(?<ch>.+?)(\\d+)?$",
+              "selectEpisodeLists": ".anthology-list-box",
+              "selectEpisodesFromList": "a",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+              "cookies": "quality=1080",
+              "addHeadersToVideo": {
+                "referer": ""
+              }
+            }
+          },
+          "tier": 0
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
+          "name": "第一动漫",
+          "description": "直连，NSFW，第一动漫，导航：https://1anime.org/",
+          "iconUrl": "https://1anime2025.me/template/conch/asset/img/favicon1.png",
+          "searchConfig": {
+            "searchUrl": "https://1anime2025.me/vodsearch/-------------.html?wd={keyword}",
+            "searchUseOnlyFirstWord": true,
+            "subjectFormatId": "a",
+            "selectorSubjectFormatA": {
+              "selectLists": "div.video-info-header > a",
+              "preferShorterName": true
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": "div.module-tab-item > span",
+              "matchChannelName": "",
+              "selectEpisodeLists": ".module-list.module-player-list",
+              "selectEpisodesFromList": "a[title]",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+              "cookies": "quality=1080",
+              "addHeadersToVideo": {
+                "referer": ""
+              }
+            }
+          },
+          "tier": 1
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
+          "name": "【有广】2k动漫",
+          "description": "直连，来自2k动漫，导航：https://www.2kdm.org/",
+          "iconUrl": "https://www.2kdm.org/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://www.2kdm.org/search.php?searchword={keyword}",
+            "searchUseOnlyFirstWord": true,
+            "subjectFormatId": "a",
+            "selectorSubjectFormatA": {
+              "selectLists": "#cont_pub > dl> dd:nth-child(2) > div > a",
+              "preferShorterName": true
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": "#liebiao > font:nth-child(1)",
+              "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+              "selectEpisodeLists": ".playList",
+              "selectEpisodesFromList": "a",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+              "cookies": "quality=1080",
+              "addHeadersToVideo": {
+                "referer": ""
+              }
+            }
+          },
+          "tier": 3
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
           "name": "hanime1_1080p",
           "description": "H~低调使用 源网站偶尔会开防护 连不上请尝试Tun",
           "iconUrl": "https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/favicon/hanime1.me_1080.png",
@@ -3539,14 +3687,52 @@
         "factoryId": "rss",
         "version": 1,
         "arguments": {
-          "name": "nyaa-里",
-          "description": "H~低调使用~",
-          "iconUrl": "https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/favicon/nyaa.si_H.png",
+          "name": "蜜柑计划",
+          "description": "直连，蜜柑计划中文站，网址：https://mikanime.tv/",
+          "iconUrl": "https://mikanime.tv/images/mikan-pic.png",
           "searchConfig": {
-            "searchUrl": "https://sukebei.nyaa.si/?page=rss&q={keyword}&c=0_0&f=0",
-            "filterByEpisodeSort": true,
-            "filterBySubjectName": false
-          }
+            "searchUrl": "https://mikanime.tv/RSS/Search?searchstr={keyword}"
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "AnimeGarden",
+          "description": "直连，动漫花园，网址：https://animes.garden/",
+          "iconUrl": "https://animes.garden/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://api.animes.garden/feed.xml?include={keyword}&type=动画"
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "Nyaa[CN]",
+          "description": "直连，Nyaa.si镜像站，网址：https://nyaa.land/",
+          "iconUrl": "https://gitee.com/w658/configs-online/raw/master/animeko/favicon/Nyaa[CN].png",
+          "searchConfig": {
+            "searchUrl": "https://nyaa.land/?page=rss&q={keyword}&c=1_0&f=0"
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "Nyaa[H]",
+          "description": "魔法，NSFW，Nyaa里站，网站：https://sukebei.nyaa.si/",
+          "iconUrl": "https://gitee.com/w658/configs-online/raw/master/animeko/favicon/Nyaa[H].png",
+          "searchConfig": {
+            "searchUrl": "https://sukebei.nyaa.si/?page=rss&q={keyword}&c=1_1&f=0&p={page}"
+          },
+          "tier": 2
         }
       }
     ]
