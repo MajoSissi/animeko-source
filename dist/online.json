@@ -202,10 +202,10 @@
         "version": 2,
         "arguments": {
           "name": "新动漫网",
-          "description": "可看里番(搜索有验证已失效)",
-          "iconUrl": "https://www.xdmw.cc/template/kuhei3/statics/img/logo_m.png",
+          "description": "可看里番(搜索有验证)",
+          "iconUrl": "https://www.xdmdy.cc/template/kuhei3/statics/img/logo_m.png",
           "searchConfig": {
-            "searchUrl": "https://www.xdmw.cc/vodsearch/{keyword}----------1---.html",
+            "searchUrl": "https://www.xdmdy.cc/vodsearch/{keyword}----------1---.html",
             "searchUseOnlyFirstWord": false,
             "searchRemoveSpecial": true,
             "searchUseSubjectNamesCount": 1,
@@ -2017,9 +2017,9 @@
         "arguments": {
           "name": "girigiri愛動漫(修复)",
           "description": "有验证",
-          "iconUrl": "https://anime.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png",
+          "iconUrl": "https://bgm.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png",
           "searchConfig": {
-            "searchUrl": "https://ani.girigirilove.com/search/-------------/?wd={keyword}",
+            "searchUrl": "https://bgm.girigirilove.com/search/-------------/?wd={keyword}",
             "searchUseOnlyFirstWord": false,
             "searchRemoveSpecial": true,
             "searchUseSubjectNamesCount": 1,
