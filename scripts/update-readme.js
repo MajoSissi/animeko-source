@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { log, rootDir } = require('./utils');
-const config = require('../config.js');
+const config = require('./config.js');
 
 const REPO = process.env.GITHUB_REPOSITORY || 'MajoSissi/animeko-source';
 

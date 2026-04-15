@@ -1,6 +1,6 @@
-const processSources = require('./scripts/process-sources');
-const updateReadme = require('./scripts/update-readme');
-const { logError } = require('./scripts/utils');
+const processSources = require('./process-sources');
+const updateReadme = require('./update-readme');
+const { logError } = require('./utils');
 
 async function main() {
     try {

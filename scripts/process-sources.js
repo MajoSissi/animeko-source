@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { log, logError, downloadFile, rootDir } = require('./utils');
-const config = require('../config.js');
+const config = require('./config.js');
 
 const sourceBaseDir = path.join(rootDir, 'source');
 const distBaseDir = path.join(rootDir, 'dist');
