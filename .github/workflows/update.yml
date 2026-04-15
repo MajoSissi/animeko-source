@@ -19,7 +19,7 @@ jobs:
         node-version: '18'
         
     - name: Run main script
-      run: node script/main.js
+      run: node scripts/main.js
       
     - name: Commit and push changes
       run: |
