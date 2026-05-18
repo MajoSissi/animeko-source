@@ -5,33 +5,71 @@
                 "factoryId": "web-selector",
                 "version": 2,
                 "arguments": {
-                    "name": "七色番",
-                    "description": "直连，来自七色番，导航：https://www.7sefun.top/",
-                    "iconUrl": "https://www.7sefun.top/pc/img/favicon.ico",
+                    "name": "稀饭动漫",
+                    "description": "直连，来自稀饭动漫，导航：https://xn--6fr867dwnhpu5a.com/",
+                    "iconUrl": "https://framerusercontent.com/images/W1MG1BV7WVdnQhHtdeYVtBvTk.png",
                     "searchConfig": {
-                        "searchUrl": "https://www.7sefun.top/vodsearch/-------------.html?wd={keyword}",
+                        "searchUrl": "https://dm.xifanacg.com/search.html?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
                         "searchRemoveSpecial": true,
                         "subjectFormatId": "indexed",
                         "selectorSubjectFormatIndexed": {
-                            "selectNames": "div.video.anim > div.video-by",
-                            "selectLinks": "div.video.anim > a",
+                            "selectNames": ".slide-info-title",
+                            "selectLinks": ".vod-detail-bnt > a ",
                             "preferShorterName": true
                         },
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
-                            "selectChannelNames": "div.chat-header.anim > span",
-                            "matchChannelName": "",
-                            "selectEpisodeLists": "div.message-container.vod-play-list-container",
-                            "selectEpisodesFromList": "span > a",
+                            "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                            "matchChannelName": "(?<ch>.*?-\\d)",
+                            "selectEpisodeLists": ".anthology-list-box",
+                            "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
                             "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                         },
                         "matchVideo": {
                             "enableNestedUrl": true,
                             "matchNestedUrl": "$^",
-                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http)(?!.*jxdunrui\\.top).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/(?!.*jxdunrui\\.top).+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
                             "cookies": "quality=1080",
+                            "addHeadersToVideo": {
+                                "referer": ""
+                            }
+                        }
+                    },
+                    "tier": 0
+                }
+            },
+            {
+                "factoryId": "web-selector",
+                "version": 2,
+                "arguments": {
+                    "name": "girigiri愛動漫",
+                    "description": "直连，来自girigiri愛，导航：https://girigirilove.top/",
+                    "iconUrl": "https://bgm.girigirilove.com/guanggao/fdd2694db66628a9deadd86e50aedd43.png",
+                    "searchConfig": {
+                        "searchUrl": "https://bgm.girigirilove.com/search/-------------/?wd={keyword}",
+                        "searchUseOnlyFirstWord": true,
+                        "subjectFormatId": "indexed",
+                        "selectorSubjectFormatIndexed": {
+                            "selectNames": "div.vod-detail.style-detail.search-list .detail-info h3.slide-info-title",
+                            "selectLinks": "div.vod-detail.style-detail.search-list .detail-info > a[href^='/GV']",
+                            "preferShorterName": true
+                        },
+                        "channelFormatId": "index-grouped",
+                        "selectorChannelFormatFlattened": {
+                            "selectChannelNames": ".anthology-tab .swiper-wrapper a",
+                            "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                            "selectEpisodeLists": ".anthology-list-box",
+                            "selectEpisodesFromList": ".anthology-list-play a",
+                            "selectEpisodeLinksFromList": "",
+                            "matchEpisodeSortFromName": "(第\\s*(?<ep>.+)\\s*[话集])|(\\d+)"
+                        },
+                        "matchVideo": {
+                            "enableNestedUrl": true,
+                            "matchNestedUrl": "$^",
+                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/alisg\\/)|(\\/video\\/.*mime_type=video)",
+                            "cookies": "quality=1080P",
                             "addHeadersToVideo": {
                                 "referer": ""
                             }
@@ -46,9 +84,9 @@
                 "arguments": {
                     "name": "LIBVIO",
                     "description": "直连，来自LIBVIO，导航：https://www.libvio.app/",
-                    "iconUrl": "https://www.libvio.site/statics/img/favicon.ico",
+                    "iconUrl": "https://www.libvio.run/statics/img/favicon.ico",
                     "searchConfig": {
-                        "searchUrl": "https://www.libvio.site/search/-------------.html?wd={keyword}",
+                        "searchUrl": "https://www.libvio.run/search/-------------.html?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
                         "subjectFormatId": "a",
                         "selectorSubjectFormatA": {
@@ -57,9 +95,9 @@
                         },
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
-                            "selectChannelNames": ".stui-pannel__head h3",
+                            "selectChannelNames": ".playlist-panel .panel-head h3",
                             "matchChannelName": "",
-                            "selectEpisodeLists": ".stui-vodlist__head .stui-content__playlist",
+                            "selectEpisodeLists": ".stui-content__playlist",
                             "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
                             "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
@@ -70,7 +108,7 @@
                             "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
                             "cookies": "quality=1080",
                             "addHeadersToVideo": {
-                                "referer": "https://www.libvio.site/"
+                                "referer": "https://www.libvio.run/"
                             }
                         }
                     },
@@ -81,25 +119,66 @@
                 "factoryId": "web-selector",
                 "version": 2,
                 "arguments": {
-                    "name": "喵物次元",
-                    "description": "直连，来自喵物次元，导航：https://mwcylink.github.io/",
-                    "iconUrl": "https://www.mwcy.net/upload/site/20241103-1/0e9b2520a7f643e88a7f51412f6b4665.png",
+                    "name": "橘子动漫",
+                    "description": "直连，来自橘子动漫，导航：https://www.mgnacg.com/",
+                    "iconUrl": "https://r2img.nanoacg.com/favicon.png",
                     "searchConfig": {
-                        "searchUrl": "https://www.mwcy.net/search.html?wd={keyword}+",
+                        "searchUrl": "https://www.mgnacg.com/search/-------------/?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
+                        "searchRemoveSpecial": true,
                         "subjectFormatId": "indexed",
                         "selectorSubjectFormatIndexed": {
-                            "selectNames": ".slide-info-title",
-                            "selectLinks": ".vod-detail-bnt > a ",
+                            "selectNames": ".thumb-content > .thumb-txt",
+                            "selectLinks": ".search-box > div > a ",
                             "preferShorterName": true
                         },
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
                             "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
-                            "matchChannelName": "(?<ch>.*?-\\w+)",
+                            "matchChannelName": "(?!云端线路|存储线路|本地线路)(?<ch>.+?)\\d+",
                             "selectEpisodeLists": ".anthology-list-box",
                             "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
+                            "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                        },
+                        "matchVideo": {
+                            "enableNestedUrl": true,
+                            "matchNestedUrl": "$^",
+                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+                            "cookies": "quality=1080",
+                            "addHeadersToVideo": {
+                                "referer": ""
+                            }
+                        }
+                    },
+                    "tier": 0
+                }
+            },
+            {
+                "factoryId": "web-selector",
+                "version": 2,
+                "arguments": {
+                    "name": "TvTFun",
+                    "description": "直连，来自TvTFun，导航：https://www.tvtfun.net/",
+                    "iconUrl": "https://www.tvtfun.net/logo.svg",
+                    "searchConfig": {
+                        "searchUrl": "https://www.tvtfun.net/api/videos/search?q={keyword}&pageSize=5",
+                        "searchUseOnlyFirstWord": true,
+                        "searchRemoveSpecial": true,
+                        "rawBaseUrl": "https://www.tvtfun.net/video/",
+                        "subjectFormatId": "json-path-indexed",
+                        "selectorSubjectFormatJsonPathIndexed": {
+                            "selectLinks": "$.data.videos[*].slug",
+                            "selectNames": "$.data.videos[*].name",
+                            "preferShorterName": true
+                        },
+                        "channelFormatId": "index-grouped",
+                        "selectorChannelFormatFlattened": {
+                            "selectChannelNames": "button[data-slot=\"button\"].inline-flex",
+                            "matchChannelName": "(?<ch>线路.+?)\\d+",
+                            "selectEpisodeLists": "div.mx-auto",
+                            "selectEpisodesFromList": "a > button",
+                            "selectEpisodeLinksFromList": "a",
                             "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                         },
                         "matchVideo": {
@@ -267,69 +346,33 @@
                 "factoryId": "web-selector",
                 "version": 2,
                 "arguments": {
-                    "name": "咕咕番",
-                    "description": "直连，来自咕咕番，导航：https://fb.gugufan.top/",
-                    "iconUrl": "https://www.gugu3.com/upload/site/20240809-1/7128d3562abaed14571d6227e1240aab.png",
+                    "name": "七色番",
+                    "description": "直连，来自七色番，导航：https://www.7sefun.top/",
+                    "iconUrl": "https://www.7sefun.top/pc/img/favicon.ico",
                     "searchConfig": {
-                        "searchUrl": "https://www.gugu3.com/index.php/vod/search.html?wd={keyword}",
+                        "searchUrl": "https://www.7sefun.top/vodsearch/-------------.html?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
-                        "subjectFormatId": "a",
-                        "selectorSubjectFormatA": {
-                            "selectLists": "div > div > div > div > div.detail-info > a",
-                            "preferShorterName": true
-                        },
-                        "channelFormatId": "index-grouped",
-                        "selectorChannelFormatFlattened": {
-                            "selectChannelNames": ".anthology-tab  .swiper-wrapper a",
-                            "matchChannelName": "^(?!.*失效)()?(?<ch>.+?)(\\d+)?$",
-                            "selectEpisodeLists": ".anthology-list-box",
-                            "selectEpisodesFromList": "a",
-                            "selectEpisodeLinksFromList": "",
-                            "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
-                        },
-                        "matchVideo": {
-                            "enableNestedUrl": true,
-                            "matchNestedUrl": "$^",
-                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
-                            "cookies": "quality=1080",
-                            "addHeadersToVideo": {
-                                "referer": ""
-                            }
-                        }
-                    },
-                    "tier": 0
-                }
-            },
-            {
-                "factoryId": "web-selector",
-                "version": 2,
-                "arguments": {
-                    "name": "酱紫社",
-                    "description": "直连，来自酱紫社，导航：https://www.jzsdm.com/",
-                    "iconUrl": "http://www.jzsdm1.com/upload/eighteen/20241228-1/06aa7eaf4e07a199c25b1e01046e796e.png",
-                    "searchConfig": {
-                        "searchUrl": "http://www.jzsdm1.com/index.php/vod/search.html?wd={keyword}",
-                        "searchUseOnlyFirstWord": true,
+                        "searchRemoveSpecial": true,
                         "subjectFormatId": "indexed",
                         "selectorSubjectFormatIndexed": {
-                            "selectNames": "body > .box-width .search-box .thumb-content > .thumb-txt",
-                            "selectLinks": "body > .box-width .search-box .thumb-menu > a",
+                            "selectNames": "div.video.anim > div.video-by",
+                            "selectLinks": "div.video.anim > a",
                             "preferShorterName": true
                         },
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
-                            "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
-                            "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                            "selectEpisodeLists": ".anthology-list-box",
-                            "selectEpisodesFromList": "a",
+                            "selectChannelNames": "div.chat-header.anim > span",
+                            "matchChannelName": "",
+                            "selectEpisodeLists": "div.message-container.vod-play-list-container",
+                            "selectEpisodesFromList": "span > a",
                             "selectEpisodeLinksFromList": "",
                             "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                         },
                         "matchVideo": {
                             "enableNestedUrl": true,
                             "matchNestedUrl": "$^",
-                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
-                            "cookies": "quality=1080P",
+                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http)(?!.*jxdunrui\\.top).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/(?!.*jxdunrui\\.top).+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+                            "cookies": "quality=1080",
                             "addHeadersToVideo": {
                                 "referer": ""
                             }
@@ -381,9 +424,9 @@
                 "arguments": {
                     "name": "第一动漫",
                     "description": "直连，NSFW，第一动漫，导航：https://1anime.org/",
-                    "iconUrl": "https://1anime2025.me/template/conch/asset/img/favicon1.png",
+                    "iconUrl": "https://1anime2026.cc/template/conch/asset/img/favicon1.png",
                     "searchConfig": {
-                        "searchUrl": "https://1anime2025.me/vodsearch/-------------.html?wd={keyword}",
+                        "searchUrl": "https://1anime2026.cc/vodsearch/-------------.html?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
                         "subjectFormatId": "a",
                         "selectorSubjectFormatA": {
