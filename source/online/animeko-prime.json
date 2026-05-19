@@ -198,22 +198,22 @@
                 "factoryId": "web-selector",
                 "version": 2,
                 "arguments": {
-                    "name": "高清点播",
-                    "description": "直连，来自高清点播，导航：https://hqvod.com/",
-                    "iconUrl": "https://hqvod.com/favicon.ico",
+                    "name": "MiFun",
+                    "description": "直连，来自MiFun，导航：https://ios.mifun.org/",
+                    "iconUrl": "https://ugc.hitv.com/1/230324151010E2CA349174CE432E9353E29DE5C0EQ0NF/sVoWeL0.png?mxtheme/images/favicon.png",
                     "searchConfig": {
-                        "searchUrl": "https://hqvod.com/sousuo/-------------/?wd={keyword}",
+                        "searchUrl": "https://ios.mifun.org/vodsearch/?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
                         "subjectFormatId": "a",
                         "selectorSubjectFormatA": {
-                            "selectLists": "div.public-list-button > a",
+                            "selectLists": ".hl-item-content > .hl-item-title > a",
                             "preferShorterName": true
                         },
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
-                            "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
-                            "matchChannelName": "^(?!.*Ac蓝光)(?<ch>.*蓝光.*?)(\\d+)?$",
-                            "selectEpisodeLists": ".anthology-list-box",
+                            "selectChannelNames": ".hl-rb-tips span.hl-text-site",
+                            "matchChannelName": "(.*快看|特快.*)",
+                            "selectEpisodeLists": ".hl-tabs-box .hl-list-wrap",
                             "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
                             "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
@@ -221,7 +221,7 @@
                         "matchVideo": {
                             "enableNestedUrl": true,
                             "matchNestedUrl": "$^",
-                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
                             "cookies": "quality=1080",
                             "addHeadersToVideo": {
                                 "referer": ""
@@ -243,7 +243,7 @@
                         "searchUseOnlyFirstWord": true,
                         "subjectFormatId": "a",
                         "selectorSubjectFormatA": {
-                            "selectLists": ".module-card-item > .module-card-item-info > .module-card-item-title>a",
+                            "selectLists": ".module-card-item > .module-card-item-info > .module-card-item-title > a",
                             "preferShorterName": false
                         },
                         "channelFormatId": "index-grouped",
@@ -272,11 +272,11 @@
                 "factoryId": "web-selector",
                 "version": 2,
                 "arguments": {
-                    "name": "去看吧",
-                    "description": "直连，来自去看吧，导航：https://k8dm.com/",
+                    "name": "E-ACG",
+                    "description": "直连，来自E-ACG，导航：https://k8dm.com/",
                     "iconUrl": "https://k8dm.com/template/vfed/asset/img/favicon.png",
                     "searchConfig": {
-                        "searchUrl": "https://11kt.net/index.php/vod/search.html?wd={keyword}",
+                        "searchUrl": "https://www.eacg1.com/vodsearch/-------------.html?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
                         "subjectFormatId": "a",
                         "selectorSubjectFormatA": {
@@ -323,7 +323,7 @@
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
                             "selectChannelNames": ".hl-tabs-btn",
-                            "matchChannelName": "^(?!Ⅰ号线$).*",
+                            "matchChannelName": "",
                             "selectEpisodeLists": ".hl-plays-list",
                             "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
@@ -385,22 +385,59 @@
                 "factoryId": "web-selector",
                 "version": 2,
                 "arguments": {
-                    "name": "热播之家",
-                    "description": "直连，来自热播之家，导航：https://www.rebozj.pro/",
-                    "iconUrl": "https://www.rebozj.pro/template/jianhei/statics/img/favicon.png",
+                    "name": "高清点播",
+                    "description": "直连，来自高清点播，导航：https://hqvod.com/",
+                    "iconUrl": "https://hqvod.com/favicon.ico",
                     "searchConfig": {
-                        "searchUrl": "https://www.rebozj.pro/search/-------------.html?wd={keyword}&submit=",
+                        "searchUrl": "https://hqvod.com/sousuo/-------------/?wd={keyword}",
                         "searchUseOnlyFirstWord": true,
                         "subjectFormatId": "a",
                         "selectorSubjectFormatA": {
-                            "selectLists": ".stui-vodlist__box h4 > a",
+                            "selectLists": "div.public-list-button > a",
                             "preferShorterName": true
                         },
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
-                            "selectChannelNames": ".nav-tabs a",
-                            "matchChannelName": "(.*蓝光.*)",
-                            "selectEpisodeLists": ".stui-content__playlist",
+                            "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                            "matchChannelName": "^(?!.*Ac蓝光)(?<ch>.*蓝光.*?)(\\d+)?$",
+                            "selectEpisodeLists": ".anthology-list-box",
+                            "selectEpisodesFromList": "a",
+                            "selectEpisodeLinksFromList": "",
+                            "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                        },
+                        "matchVideo": {
+                            "enableNestedUrl": true,
+                            "matchNestedUrl": "$^",
+                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+                            "cookies": "quality=1080",
+                            "addHeadersToVideo": {
+                                "referer": ""
+                            }
+                        }
+                    },
+                    "tier": 0
+                }
+            },
+            {
+                "factoryId": "web-selector",
+                "version": 2,
+                "arguments": {
+                    "name": "嘀嗒影视",
+                    "description": "直连，来自嘀嗒影视，导航：https://www.didahd.pro/",
+                    "iconUrl": "https://www.didahd.pro/template/mytheme/statics/img/favicon.ico",
+                    "searchConfig": {
+                        "searchUrl": "https://www.didahd.pro/search/-------------.html?wd={keyword}&submit=",
+                        "searchUseOnlyFirstWord": true,
+                        "subjectFormatId": "a",
+                        "selectorSubjectFormatA": {
+                            "selectLists": ".myui-vodlist__media h4 > a",
+                            "preferShorterName": true
+                        },
+                        "channelFormatId": "index-grouped",
+                        "selectorChannelFormatFlattened": {
+                            "selectChannelNames": ".nav-tabs a[href^=#playlist]",
+                            "matchChannelName": "(.*超清.*)",
+                            "selectEpisodeLists": ".myui-content__list",
                             "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
                             "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
@@ -460,7 +497,7 @@
                 "version": 2,
                 "arguments": {
                     "name": "柯南影视",
-                    "description": "直连，来自柯南影视，导航：https://hqvod.com/",
+                    "description": "直连，来自柯南影视，导航：https://knvod.com/",
                     "iconUrl": "https://img1.baidu.com/it/u=1696667517,694918006&fm=253",
                     "searchConfig": {
                         "searchUrl": "https://www.knvod.com/daxiaoren/-------------/?wd={keyword}",
