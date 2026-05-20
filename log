@@ -1,34 +1,34 @@
-[2026/05/19 02:14:11] Starting update process...
-[2026/05/19 02:14:11] ================================================================================
-[2026/05/19 02:14:11] 处理分类: online (在线)
-[2026/05/19 02:14:11] ================================================================================
-[2026/05/19 02:14:11] 下载中： https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json ...
-[2026/05/19 02:14:12] 下载中： https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json ...
-[2026/05/19 02:14:12] 分类内重复，跳过： Aki动漫 (www.akianime.cc)
-[2026/05/19 02:14:12] 下载中： https://gitee.com/w658/configs-online/raw/master/animeko-prime.json ...
-[2026/05/19 02:14:15] 分类内重复，跳过： girigiri愛動漫 (bgm.girigirilove.com)
-[2026/05/19 02:14:15] 分类内重复，跳过： E-ACG (www.eacg1.com)
-[2026/05/19 02:14:15] 分类内重复，跳过： 风铃动漫 (www.aafun.cc)
-[2026/05/19 02:14:15] 分类内重复，跳过： 七色番 (www.7sefun.top)
-[2026/05/19 02:14:15] 分类内重复，跳过： 高清点播 (hqvod.com)
-[2026/05/19 02:14:15] 分类内重复，跳过： 柯南影视 (www.knvod.com)
-[2026/05/19 02:14:15] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
-[2026/05/19 02:14:16] [过滤] 跳过 nyaa-里 (sukebei.nyaa.si) - 条目排除过滤: sukebei.nyaa.si
-[2026/05/19 02:14:16] 分类内重复，跳过： hanime1_720p (hanime1.me)
-[2026/05/19 02:14:16] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/online.json
-[2026/05/19 02:14:16] ================================================================================
-[2026/05/19 02:14:16] 处理分类: bt (BT)
-[2026/05/19 02:14:16] ================================================================================
-[2026/05/19 02:14:16] 下载中： https://masofod.github.io/anibt.json ...
-[2026/05/19 02:14:16] 下载中： https://gitee.com/w658/configs-online/raw/master/animeko-prime-bt.json ...
-[2026/05/19 02:14:18] 分类内重复，跳过： 动漫花园 (share.dmhy.org)
-[2026/05/19 02:14:18] 分类内重复，跳过： 末日動漫資源庫 (share.acgnx.cc)
-[2026/05/19 02:14:18] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
-[2026/05/19 02:14:18] 分类内重复，跳过： nyaa-里 (sukebei.nyaa.si)
-[2026/05/19 02:14:18] [过滤] 跳过 hanime1_1080p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
-[2026/05/19 02:14:18] [过滤] 跳过 hanime1_720p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
-[2026/05/19 02:14:18] [过滤] 跳过 hanime1_one.me (hanimeone.me) - 条目包含过滤: sukebei.nyaa.si
-[2026/05/19 02:14:18] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/bt.json
-[2026/05/19 02:14:18] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/all.json
-[2026/05/19 02:14:18] Source processing completed.
-[2026/05/19 02:14:18] README.md updated.
+[2026/05/20 02:13:03] Starting update process...
+[2026/05/20 02:13:03] ================================================================================
+[2026/05/20 02:13:03] 处理分类: online (在线)
+[2026/05/20 02:13:03] ================================================================================
+[2026/05/20 02:13:03] 下载中： https://raw.githubusercontent.com/cxay666/ani-yuan/main/ani-yuan.json ...
+[2026/05/20 02:13:03] 下载中： https://raw.githubusercontent.com/Nier4ever/ani-sub/main/css.json ...
+[2026/05/20 02:13:03] 分类内重复，跳过： Aki动漫 (www.akianime.cc)
+[2026/05/20 02:13:03] 下载中： https://gitee.com/w658/configs-online/raw/master/animeko-prime.json ...
+[2026/05/20 02:13:08] 分类内重复，跳过： girigiri愛動漫 (bgm.girigirilove.com)
+[2026/05/20 02:13:08] 分类内重复，跳过： E-ACG (www.eacg1.com)
+[2026/05/20 02:13:08] 分类内重复，跳过： 风铃动漫 (www.aafun.cc)
+[2026/05/20 02:13:08] 分类内重复，跳过： 七色番 (www.7sefun.top)
+[2026/05/20 02:13:08] 分类内重复，跳过： 高清点播 (hqvod.com)
+[2026/05/20 02:13:08] 分类内重复，跳过： 柯南影视 (www.knvod.com)
+[2026/05/20 02:13:08] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
+[2026/05/20 02:13:09] [过滤] 跳过 nyaa-里 (sukebei.nyaa.si) - 条目排除过滤: sukebei.nyaa.si
+[2026/05/20 02:13:09] 分类内重复，跳过： hanime1_720p (hanime1.me)
+[2026/05/20 02:13:09] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/online.json
+[2026/05/20 02:13:09] ================================================================================
+[2026/05/20 02:13:09] 处理分类: bt (BT)
+[2026/05/20 02:13:09] ================================================================================
+[2026/05/20 02:13:09] 下载中： https://masofod.github.io/anibt.json ...
+[2026/05/20 02:13:09] 下载中： https://gitee.com/w658/configs-online/raw/master/animeko-prime-bt.json ...
+[2026/05/20 02:13:10] 分类内重复，跳过： 动漫花园 (share.dmhy.org)
+[2026/05/20 02:13:10] 分类内重复，跳过： 末日動漫資源庫 (share.acgnx.cc)
+[2026/05/20 02:13:10] 下载中： https://gitee.com/wan0ge/extract-pure-links/raw/Ani_Pages/H.json ...
+[2026/05/20 02:13:10] 分类内重复，跳过： nyaa-里 (sukebei.nyaa.si)
+[2026/05/20 02:13:10] [过滤] 跳过 hanime1_1080p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
+[2026/05/20 02:13:10] [过滤] 跳过 hanime1_720p (hanime1.me) - 条目包含过滤: sukebei.nyaa.si
+[2026/05/20 02:13:10] [过滤] 跳过 hanime1_one.me (hanimeone.me) - 条目包含过滤: sukebei.nyaa.si
+[2026/05/20 02:13:10] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/bt.json
+[2026/05/20 02:13:10] Saved merged file to /home/runner/work/animeko-source/animeko-source/dist/all.json
+[2026/05/20 02:13:10] Source processing completed.
+[2026/05/20 02:13:10] README.md updated.

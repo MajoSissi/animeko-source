@@ -44,6 +44,21 @@
                 "factoryId": "rss",
                 "version": 1,
                 "arguments": {
+                    "name": "ACG.RIP",
+                    "description": "直连，ACG.RIP镜像站，网址：https://acg.rip.codfish.top/",
+                    "iconUrl": "https://acg.rip.codfish.top/favicon.ico",
+                    "searchConfig": {
+                        "searchUrl": "https://acg.rip.codfish.top/.xml?term={keyword}",
+                        "filterByEpisodeSort": true,
+                        "filterBySubjectName": true
+                    },
+                    "tier": 2
+                }
+            },
+            {
+                "factoryId": "rss",
+                "version": 1,
+                "arguments": {
                     "name": "末日動漫資源庫",
                     "description": "直连，末日動漫資源庫，网址：https://share.acgnx.cc/",
                     "iconUrl": "https://share.acgnx.cc/favicon.ico",

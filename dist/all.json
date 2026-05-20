@@ -3382,12 +3382,11 @@
         "version": 2,
         "arguments": {
           "name": "稀饭动漫",
-          "description": "直连，来自稀饭动漫，导航：https://xn--6fr867dwnhpu5a.com/",
+          "description": "有验证，来自稀饭动漫，导航：https://xn--6fr867dwnhpu5a.com/",
           "iconUrl": "https://framerusercontent.com/images/W1MG1BV7WVdnQhHtdeYVtBvTk.png",
           "searchConfig": {
             "searchUrl": "https://dm.xifanacg.com/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
-            "searchRemoveSpecial": true,
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
               "selectNames": ".slide-info-title",
@@ -3458,12 +3457,11 @@
         "version": 2,
         "arguments": {
           "name": "橘子动漫",
-          "description": "直连，来自橘子动漫，导航：https://www.mgnacg.com/",
+          "description": "有验证，来自橘子动漫，导航：https://www.mgnacg.com/",
           "iconUrl": "https://r2img.nanoacg.com/favicon.png",
           "searchConfig": {
             "searchUrl": "https://www.mgnacg.com/search/-------------/?wd={keyword}",
             "searchUseOnlyFirstWord": true,
-            "searchRemoveSpecial": true,
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
               "selectNames": ".thumb-content > .thumb-txt",
@@ -3496,13 +3494,51 @@
         "factoryId": "web-selector",
         "version": 2,
         "arguments": {
+          "name": "青空次元",
+          "description": "直连，来自青空次元，导航：https://www.sorani.net/",
+          "iconUrl": "https://www.sorani.net/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://api.sorani.cc/sorani-cms/api/video?page=1&size=50&keyword={keyword}&enabled=true&sortMode=latest&sortDesc=true",
+            "searchUseOnlyFirstWord": true,
+            "rawBaseUrl": "https://www.sorani.net/anime/mal/",
+            "subjectFormatId": "json-path-indexed",
+            "selectorSubjectFormatJsonPathIndexed": {
+              "selectLinks": "$.data.records[*].id",
+              "selectNames": "$.data.records[*].title",
+              "preferShorterName": true
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": "title",
+              "matchChannelName": "^.* - (?<ch>青空次元)$",
+              "selectEpisodeLists": ".episode-thumb-grid",
+              "selectEpisodesFromList": ".bottom-0 > p",
+              "selectEpisodeLinksFromList": "a",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+              "cookies": "quality=1080",
+              "addHeadersToVideo": {
+                "referer": ""
+              }
+            }
+          },
+          "tier": 0
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
           "name": "TvTFun",
           "description": "直连，来自TvTFun，导航：https://www.tvtfun.net/",
           "iconUrl": "https://www.tvtfun.net/logo.svg",
           "searchConfig": {
             "searchUrl": "https://www.tvtfun.net/api/videos/search?q={keyword}&pageSize=5",
             "searchUseOnlyFirstWord": true,
-            "searchRemoveSpecial": true,
             "rawBaseUrl": "https://www.tvtfun.net/video/",
             "subjectFormatId": "json-path-indexed",
             "selectorSubjectFormatJsonPathIndexed": {
@@ -3573,11 +3609,11 @@
         "factoryId": "web-selector",
         "version": 2,
         "arguments": {
-          "name": "omofun111",
-          "description": "直连，来自omofun动漫视频网，导航：https://enlienli.link/",
-          "iconUrl": "https://enlienli.link/upload/mxprocms/20230707-1/49f4b8a7fd5cbf77ffcfa7a52e755675.gif",
+          "name": "omofun04",
+          "description": "直连，来自omofun动漫视频网，导航：https://omofun04.top/",
+          "iconUrl": "https://omofun04.top/upload/mxprocms/20230707-1/fd60898f581d229a8f328823e60dd181.gif",
           "searchConfig": {
-            "searchUrl": "https://enlienli.link/vod/search.html?wd={keyword}",
+            "searchUrl": "https://omofun04.top/vod/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
             "subjectFormatId": "a",
             "selectorSubjectFormatA": {
@@ -3589,6 +3625,81 @@
               "selectChannelNames": "div.module-tab-items-box > .module-tab-item > span",
               "matchChannelName": "(.*独家.*)",
               "selectEpisodeLists": ".module-play-list-content",
+              "selectEpisodesFromList": "a",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+              "cookies": "quality=1080",
+              "addHeadersToVideo": {
+                "referer": ""
+              }
+            }
+          },
+          "tier": 0
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
+          "name": "樱花风车动漫",
+          "description": "直连，来自嘀嗒影视，导航：https://www.didahd.pro/",
+          "iconUrl": "https://www.605dm.com/template/mytheme/statics/image/20210705/5f97458b6.png",
+          "searchConfig": {
+            "searchUrl": "https://www.605dm.com/search/-------------.html?wd={keyword}&submit=",
+            "searchUseOnlyFirstWord": true,
+            "subjectFormatId": "a",
+            "selectorSubjectFormatA": {
+              "selectLists": ".myui-vodlist__media h4 > a",
+              "preferShorterName": true
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": ".nav-tabs a[href^=#playlist]",
+              "matchChannelName": "(.*风车动漫.*)",
+              "selectEpisodeLists": ".myui-content__list",
+              "selectEpisodesFromList": "a",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+            },
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+              "cookies": "quality=1080",
+              "addHeadersToVideo": {
+                "referer": ""
+              }
+            }
+          },
+          "tier": 0
+        }
+      },
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
+          "name": "迷影社",
+          "description": "有验证，来自迷影社，导航：https://danmuhd.com/",
+          "iconUrl": "https://p1.ssl.qhmsg.com/t1130d20f019a06d85a6ce73f9b.png",
+          "searchConfig": {
+            "searchUrl": "https://danmuhd.com/vodsearch/-------------.html?wd={keyword}",
+            "searchUseOnlyFirstWord": true,
+            "subjectFormatId": "indexed",
+            "selectorSubjectFormatIndexed": {
+              "selectNames": "#searchGrid h3",
+              "selectLinks": "#searchGrid a",
+              "preferShorterName": true
+            },
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": "#epSources button",
+              "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+              "selectEpisodeLists": ".ep-grid",
               "selectEpisodesFromList": "a",
               "selectEpisodeLinksFromList": "",
               "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
@@ -3897,6 +4008,21 @@
           "iconUrl": "https://animes.garden/favicon.ico",
           "searchConfig": {
             "searchUrl": "https://api.animes.garden/feed.xml?include={keyword}&type=动画"
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
+          "name": "ACG.RIP",
+          "description": "直连，ACG.RIP镜像站，网址：https://acg.rip.codfish.top/",
+          "iconUrl": "https://acg.rip.codfish.top/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://acg.rip.codfish.top/.xml?term={keyword}",
+            "filterByEpisodeSort": true,
+            "filterBySubjectName": true
           },
           "tier": 2
         }

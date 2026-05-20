@@ -73,6 +73,21 @@
         "factoryId": "rss",
         "version": 1,
         "arguments": {
+          "name": "ACG.RIP",
+          "description": "直连，ACG.RIP镜像站，网址：https://acg.rip.codfish.top/",
+          "iconUrl": "https://acg.rip.codfish.top/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://acg.rip.codfish.top/.xml?term={keyword}",
+            "filterByEpisodeSort": true,
+            "filterBySubjectName": true
+          },
+          "tier": 2
+        }
+      },
+      {
+        "factoryId": "rss",
+        "version": 1,
+        "arguments": {
           "name": "Nyaa[CN]",
           "description": "直连，Nyaa.si镜像站，网址：https://nyaa.land/",
           "iconUrl": "https://gitee.com/w658/configs-online/raw/master/animeko/favicon/Nyaa[CN].png",
