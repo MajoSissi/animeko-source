@@ -3381,44 +3381,6 @@
         "factoryId": "web-selector",
         "version": 2,
         "arguments": {
-          "name": "稀饭动漫",
-          "description": "有验证，来自稀饭动漫，导航：https://xn--6fr867dwnhpu5a.com/",
-          "iconUrl": "https://framerusercontent.com/images/W1MG1BV7WVdnQhHtdeYVtBvTk.png",
-          "searchConfig": {
-            "searchUrl": "https://dm.xifanacg.com/search.html?wd={keyword}",
-            "searchUseOnlyFirstWord": true,
-            "subjectFormatId": "indexed",
-            "selectorSubjectFormatIndexed": {
-              "selectNames": ".slide-info-title",
-              "selectLinks": ".vod-detail-bnt > a ",
-              "preferShorterName": true
-            },
-            "channelFormatId": "index-grouped",
-            "selectorChannelFormatFlattened": {
-              "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
-              "matchChannelName": "(?<ch>.*?-\\d)",
-              "selectEpisodeLists": ".anthology-list-box",
-              "selectEpisodesFromList": "a",
-              "selectEpisodeLinksFromList": "",
-              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
-            },
-            "matchVideo": {
-              "enableNestedUrl": true,
-              "matchNestedUrl": "$^",
-              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
-              "cookies": "quality=1080",
-              "addHeadersToVideo": {
-                "referer": ""
-              }
-            }
-          },
-          "tier": 0
-        }
-      },
-      {
-        "factoryId": "web-selector",
-        "version": 2,
-        "arguments": {
           "name": "girigiri愛動漫",
           "description": "有验证，来自girigiri愛，导航：https://girigirilove.top/",
           "iconUrl": "https://ani.girigirilove.com/guanggao/fdd2694db66628a9deadd86e50aedd43.png",
@@ -3559,45 +3521,6 @@
               "cookies": "quality=1080",
               "addHeadersToVideo": {
                 "referer": ""
-              }
-            }
-          },
-          "tier": 0
-        }
-      },
-      {
-        "factoryId": "web-selector",
-        "version": 2,
-        "arguments": {
-          "name": "青空次元",
-          "description": "直连，来自青空次元，导航：https://www.sorani.net/",
-          "iconUrl": "https://www.sorani.net/favicon.ico",
-          "searchConfig": {
-            "searchUrl": "https://api.sorani.cc/sorani-cms/api/video?page=1&size=50&keyword={keyword}&enabled=true&sortMode=latest&sortDesc=true",
-            "searchUseOnlyFirstWord": true,
-            "rawBaseUrl": "https://www.sorani.net/anime/mal/",
-            "subjectFormatId": "json-path-indexed",
-            "selectorSubjectFormatJsonPathIndexed": {
-              "selectLinks": "$.data.records[*].id",
-              "selectNames": "$.data.records[*].title",
-              "preferShorterName": true
-            },
-            "channelFormatId": "index-grouped",
-            "selectorChannelFormatFlattened": {
-              "selectChannelNames": "title",
-              "matchChannelName": "^.* - (?<ch>青空次元)$",
-              "selectEpisodeLists": ".episode-thumb-grid",
-              "selectEpisodesFromList": ".bottom-0 > p",
-              "selectEpisodeLinksFromList": "a",
-              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
-            },
-            "matchVideo": {
-              "enableNestedUrl": true,
-              "matchNestedUrl": "$^",
-              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
-              "cookies": "quality=1080",
-              "addHeadersToVideo": {
-                "referer": "https://www.sorani.net/"
               }
             }
           },
