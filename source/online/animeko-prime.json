@@ -5,44 +5,6 @@
                 "factoryId": "web-selector",
                 "version": 2,
                 "arguments": {
-                    "name": "番薯动漫",
-                    "description": "有验证，来自番薯动漫，导航：https://fsdm.top/",
-                    "iconUrl": "https://p0.ssl.qhimg.com/t016852bd7df93fb9de.png",
-                    "searchConfig": {
-                        "searchUrl": "https://ani.fsdm02.com/vodsearch/-------------.html?wd={keyword}",
-                        "searchUseOnlyFirstWord": true,
-                        "rawBaseUrl": "",
-                        "subjectFormatId": "a",
-                        "selectorSubjectFormatA": {
-                            "selectLists": ".module-card-item > .module-card-item-info > .module-card-item-title > a",
-                            "preferShorterName": true
-                        },
-                        "channelFormatId": "index-grouped",
-                        "selectorChannelFormatFlattened": {
-                            "selectChannelNames": "div.module-tab-items-box > .module-tab-item > span",
-                            "matchChannelName": "",
-                            "selectEpisodeLists": ".module-play-list-content",
-                            "selectEpisodesFromList": "a",
-                            "selectEpisodeLinksFromList": "",
-                            "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
-                        },
-                        "matchVideo": {
-                            "enableNestedUrl": true,
-                            "matchNestedUrl": "$^",
-                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
-                            "cookies": "quality=1080",
-                            "addHeadersToVideo": {
-                                "referer": ""
-                            }
-                        }
-                    },
-                    "tier": 0
-                }
-            },
-            {
-                "factoryId": "web-selector",
-                "version": 2,
-                "arguments": {
                     "name": "girigiri愛動漫",
                     "description": "有验证，来自girigiri愛，导航：https://girigirilove.top/",
                     "iconUrl": "https://ani.girigirilove.com/guanggao/fdd2694db66628a9deadd86e50aedd43.png",
