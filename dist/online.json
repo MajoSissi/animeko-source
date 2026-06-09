@@ -3508,7 +3508,7 @@
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
               "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
-              "matchChannelName": "(?!云端线路|存储线路|本地线路)(?<ch>.+?)\\d+",
+              "matchChannelName": "^(?!Mahoo|存储线路|本地线路)(?<ch>.+?)(\\d+)?$",
               "selectEpisodeLists": ".anthology-list-box",
               "selectEpisodesFromList": "a",
               "selectEpisodeLinksFromList": "",
@@ -3547,7 +3547,7 @@
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
               "selectChannelNames": "button[data-slot=\"button\"].inline-flex",
-              "matchChannelName": "(?<ch>线路.+?)\\d+",
+              "matchChannelName": "^(?<ch>线路.+?)(\\d+)?$",
               "selectEpisodeLists": "div.mx-auto",
               "selectEpisodesFromList": "a > button",
               "selectEpisodeLinksFromList": "a",

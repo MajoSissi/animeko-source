@@ -132,7 +132,7 @@
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
                             "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
-                            "matchChannelName": "(?!云端线路|存储线路|本地线路)(?<ch>.+?)\\d+",
+                            "matchChannelName": "^(?!Mahoo|存储线路|本地线路)(?<ch>.+?)(\\d+)?$",
                             "selectEpisodeLists": ".anthology-list-box",
                             "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
@@ -171,7 +171,7 @@
                         "channelFormatId": "index-grouped",
                         "selectorChannelFormatFlattened": {
                             "selectChannelNames": "button[data-slot=\"button\"].inline-flex",
-                            "matchChannelName": "(?<ch>线路.+?)\\d+",
+                            "matchChannelName": "^(?<ch>线路.+?)(\\d+)?$",
                             "selectEpisodeLists": "div.mx-auto",
                             "selectEpisodesFromList": "a > button",
                             "selectEpisodeLinksFromList": "a",
@@ -359,6 +359,44 @@
                             "matchChannelName": "(.*看吧.*)",
                             "selectEpisodeLists": ".fed-play-item.fed-drop-item",
                             "selectEpisodesFromList": "a.fed-btns-info",
+                            "selectEpisodeLinksFromList": "",
+                            "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
+                        },
+                        "matchVideo": {
+                            "enableNestedUrl": true,
+                            "matchNestedUrl": "$^",
+                            "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
+                            "cookies": "quality=1080",
+                            "addHeadersToVideo": {
+                                "referer": ""
+                            }
+                        }
+                    },
+                    "tier": 0
+                }
+            },
+            {
+                "factoryId": "web-selector",
+                "version": 2,
+                "arguments": {
+                    "name": "喵物次元",
+                    "description": "直连，来自喵物次元，导航：https://mwcylink.github.io/",
+                    "iconUrl": "https://www.mwcy.net/upload/site/20241103-1/0e9b2520a7f643e88a7f51412f6b4665.png",
+                    "searchConfig": {
+                        "searchUrl": "https://www.mwcy.net/search.html?wd={keyword}+",
+                        "searchUseOnlyFirstWord": true,
+                        "rawBaseUrl": "",
+                        "subjectFormatId": "a",
+                        "selectorSubjectFormatA": {
+                            "selectLists": ".detail-info > a",
+                            "preferShorterName": true
+                        },
+                        "channelFormatId": "index-grouped",
+                        "selectorChannelFormatFlattened": {
+                            "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                            "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
+                            "selectEpisodeLists": ".anthology-list-box",
+                            "selectEpisodesFromList": "a",
                             "selectEpisodeLinksFromList": "",
                             "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                         },
