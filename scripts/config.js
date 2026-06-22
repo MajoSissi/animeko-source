@@ -32,8 +32,11 @@
 module.exports = {
     // 更新readme用的
     proxy: [
-        "https://ghfast.top/",
-        "https://gh-proxy.com/"
+        "https://gh-proxy.com/",
+        "https://ghproxy.link/",
+        "https://v6.gh-proxy.org/",
+        "https://cdn.gh-proxy.org/"
+
     ],
     sources: [
         {
