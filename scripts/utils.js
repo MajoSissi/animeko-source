@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const rootDir = path.resolve(__dirname, '..');
-const logPath = path.join(rootDir, 'log');
+const logPath = path.join(rootDir, 'update-log');
 
 function getTimestamp() {
     const now = new Date();

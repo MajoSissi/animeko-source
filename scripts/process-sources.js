@@ -23,10 +23,9 @@ function checkFilter(value, filter) {
 }
 
 async function processSources() {
-    fs.writeFileSync(path.join(rootDir, 'log'), ''); // Clear log file
-    log('Starting update process...');
+    fs.writeFileSync(path.join(rootDir, 'update-log'), ''); // 清空日志文件
+    log('开始更新...');
 
-    // 确保输出目录存在
     if (!fs.existsSync(distBaseDir)) {
         fs.mkdirSync(distBaseDir, { recursive: true });
     }
@@ -45,7 +44,6 @@ async function processSources() {
         log('================================================================================');
         
         const categorySourceDir = path.join(sourceBaseDir, category);
-        // 确保分类的源目录存在
         if (!fs.existsSync(categorySourceDir)) {
             fs.mkdirSync(categorySourceDir, { recursive: true });
         }
@@ -168,7 +166,7 @@ async function processSources() {
                     }
                 }
             } catch (e) {
-                logError(`Error parsing JSON from ${link.file}: ${e.message}`);
+                logError(`解析 JSON 出错 ${link.file}: ${e.message}`);
             }
         }
 
@@ -184,7 +182,7 @@ async function processSources() {
                 }
             }
         } catch (e) {
-            logError(`Error cleaning up files in ${categorySourceDir}: ${e.message}`);
+            logError(`清理文件时出错 ${categorySourceDir}: ${e.message}`);
         }
 
         const distFilePath = path.join(distBaseDir, `${category}.json`);
@@ -195,7 +193,7 @@ async function processSources() {
         };
 
         fs.writeFileSync(distFilePath, JSON.stringify(result, null, 2), 'utf8');
-        log(`Saved merged file to ${distFilePath}`);
+        log(`已保存合并文件到 ${distFilePath}`);
     }
 
     // 保存合并后的 all.json
@@ -206,9 +204,9 @@ async function processSources() {
         }
     };
     fs.writeFileSync(allFilePath, JSON.stringify(allResult, null, 2), 'utf8');
-    log(`Saved merged file to ${allFilePath}`);
+    log(`已保存合并文件到 ${allFilePath}`);
     
-    log('Source processing completed.');
+    log('处理完成');
 }
 
 if (require.main === module) {
