@@ -23,7 +23,7 @@ function checkFilter(value, filter) {
 }
 
 async function processSources() {
-    fs.writeFileSync(path.join(rootDir, 'update-log'), ''); // 清空日志文件
+    fs.writeFileSync(path.join(rootDir, 'log'), ''); // 清空日志文件
     log('开始更新...');
 
     if (!fs.existsSync(distBaseDir)) {
