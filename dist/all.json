@@ -3389,8 +3389,8 @@
             "searchUseOnlyFirstWord": true,
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
-              "selectNames": "div.vod-detail.style-detail.search-list .detail-info h3.slide-info-title",
-              "selectLinks": "div.vod-detail.style-detail.search-list .detail-info > a[href^='/GV']",
+              "selectNames": ".vod-detail .detail-info .slide-info-title",
+              "selectLinks": ".vod-detail .detail-info > a",
               "preferShorterName": true
             },
             "channelFormatId": "index-grouped",
